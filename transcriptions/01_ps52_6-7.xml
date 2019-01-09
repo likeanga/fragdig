@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schemata/schema_group1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PS 52,6–7</title>
+                <author>Unknown</author>
+                <respStmt>
+                    <resp>Originally prepared by</resp>
+                    <name>Erich Renhart</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Revised and edited by</resp>
+                    <name>Selina Galka</name>
+                </respStmt>
+                <respStmt>
+                    <resp>XML encoding by</resp>
+                    <name>Angelika Hechtl</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Zentrum für Informationsmodellierung, Universität Graz</publisher>
+                <pubPlace>Graz</pubPlace>
+                <date when="2018-12-13">2018</date>
+                <availability>
+                    <p>Dieses Werk ist lizenziert unter einer<ref
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International</ref>Lizenz. </p>
+                </availability>
+                <idno type="PID">hier brauchen wir den PID</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement/>
+                        <repository/>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang xml:lang="la">Lateinisch</textLang>
+                        <msItem>
+                            <author/>
+                            <title/>
+                        </msItem>
+                    </msContents>
+                    <history>
+                        <origin>
+                            <origDate notBefore="0800" notAfter="1600"/>
+                            <origPlace/>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <!-- Faksimile einbinden -->
+        <surface xml:id="fol.1">
+            <graphic mimeType="image/jpeg" url="file:///1.jpg" xml:id="img.fol.1"/>
+            <zone/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <listBibl>
+                <msDesc>
+                    <!-- noch mehr Elemente -->
+                    <msIdentifier>
+                        <settlement>Graz</settlement>
+                        <repository>GAMS</repository>
+                        <msName xml:lang="la"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>Pergamentfragment</p>
+                    </physDesc>
+                </msDesc>
+            </listBibl>
+            <pb type="folio" facs="#fol.1" xml:id="Folio-1"/>
+            <div type="original" xml:lang="la">
+                <lg>
+                    <l xml:id="L1"><choice><abbr>Qm</abbr><expan>Quoniam</expan></choice>
+                        <choice><abbr>ds</abbr><expan>Deus</expan></choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="#ER"
+                            place="above">52.6.</add></l>
+                    <l xml:id="L2">nibus placent: confusi sunt</l>
+                    <l xml:id="L3">quoniam Deus sprevit eos.</l>
+                    <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
+                    <l xml:id="L5">cum convertit Deus captivita[tem]</l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l xml:id="#L1"/>
+                    <l xml:id="#L2"/>
+                </lg>
+            </div>
+            <div><p> 52,6: Quoniam Deus dissipavit ossa eorum qui hominibus placent: confusi sunt,
+                quoniam Deus sprevit eos. 52,7: Quis dabit ex Sion salutare Israhel cum convertit
+                Deus captivita[tem] </p>
+            </div>
+
+        </body>
+    </text>
+</TEI>
+<!-- If abbreviations are expanded silently, this practice should be documented in the editorialDecl, either with a normalization element or a p. -->
