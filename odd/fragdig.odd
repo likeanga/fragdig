@@ -1577,7 +1577,7 @@
       
       <elementSpec ident="l" module="core" mode="change">
         <attList>          
-          <!--  <attDef ident="xml:id" mode="delete"/> -->
+          <attDef ident="xml:id" mode="change" usage="opt"/>
           <attDef ident="n" mode="delete"/>
           <attDef ident="xml:lang" mode="delete"/>
           <attDef ident="xml:base" mode="delete"/>
@@ -1585,7 +1585,7 @@
           <attDef ident="rend" mode="delete"/>
           <attDef ident="style" mode="delete"/>
           <attDef ident="rendition" mode="delete"/>
-          <attDef ident="corresp" mode="change" usage="rec">
+          <attDef ident="corresp" mode="replace">
             <datatype>
               <dataRef key="teidata.pointer"/>
             </datatype>
