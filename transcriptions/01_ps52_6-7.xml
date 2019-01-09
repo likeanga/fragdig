@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="schemata/schema_group1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -92,8 +92,8 @@
             </div>
             <div type="translation" xml:lang="de">
                 <lg>
-                    <l xml:id="#L1"/>
-                    <l xml:id="#L2"/>
+                    <l corresp="#L1"/>
+                    <l xml:id="L2"/>
                 </lg>
             </div>
             <div><p> 52,6: Quoniam Deus dissipavit ossa eorum qui hominibus placent: confusi sunt,
