@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../odd/out/group1_schema_v2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>67,18-20</title>
+                <title>PS 52,6–7</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -15,7 +16,7 @@
                     <name>Selina Galka</name>
                 </respStmt>
                 <respStmt>
-                    <resp>XML Encoding by</resp>
+                    <resp>XML encoding by</resp>
                     <name>Angelika Hechtl</name>
                 </respStmt>
             </titleStmt>
@@ -24,14 +25,19 @@
                 <pubPlace>Graz</pubPlace>
                 <date when="2018-12-13">2018</date>
                 <availability>
-                    <p>Dieses Werk ist lizenziert unter einer<ref target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>Lizenz. </p>
+                    <p>Dieses Werk ist lizenziert unter einer<ref
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International</ref>Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
+                        <settlement/>
+                        <repository/>
+                        <idno/>
                     </msIdentifier>
                     <msContents>
                         <textLang xml:lang="la">Lateinisch</textLang>
@@ -52,8 +58,8 @@
     </teiHeader>
     <facsimile>
         <!-- Faksimile einbinden -->
-        <surface>
-            <graphic url=""/>
+        <surface xml:id="fol.1">
+            <graphic mimeType="image/jpeg" url="file:///1.jpg" xml:id="img.fol.1"/>
             <zone/>
         </surface>
     </facsimile>
@@ -68,21 +74,16 @@
                         <msName xml:lang="la"/>
                     </msIdentifier>
                     <physDesc>
-                        <objectDesc>
-                            <supportDesc>
-                                <support>Pergament</support>
-                            </supportDesc>
-                        </objectDesc>
+                        <p>Pergamentfragment</p>
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio"/>
-         
+            <pb type="folio" facs="#fol.1" xml:id="Folio-1"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l xml:id="L1"><choice><abbr>Q<g ref="#"></g></abbr><expan>Quoniam</expan></choice>
-                        <choice><abbr>ds</abbr><expan>Deus</expan></choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="ER"
-                            place="above">52.6.</add></l> <!-- milestone element -->
+                    <l xml:id="L1"><choice><abbr>Qm</abbr><expan>Quoniam</expan></choice>
+                        <choice><abbr>ds</abbr><expan>Deus</expan></choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="#ER"
+                            place="above">52.6.</add></l>
                     <l xml:id="L2">nibus placent: confusi sunt</l>
                     <l xml:id="L3">quoniam Deus sprevit eos.</l>
                     <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
@@ -91,22 +92,24 @@
             </div>
             <div type="translation" xml:lang="de">
                 <lg>
-                    <l>blabla</l>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
                 </lg>
             </div>
-            <!--  
-            <p> 
-                Ps 67,18-20
-                67,18: [multi]plex milia tetantum, Dominus in Sinai in sancto
-                67,19: Ascendisti in altum cepisti captivitatem accepisti dona in hominibus. Etenim non credentes
-                inhabitare Dominum Deum
-                67,20: Benedictus Dominus die cottidie
-            </p>
-            -->
+            <div><p> 52,6: Quoniam Deus dissipavit ossa eorum qui hominibus placent: confusi sunt,
+                quoniam Deus sprevit eos. 52,7: Quis dabit ex Sion salutare Israhel cum convertit
+                Deus captivita[tem] </p>
+            </div>
+
         </body>
     </text>
 </TEI>
+
+02_ps_53_7-8
+
+53,7: Averte mala inimicis meis: in veritate tua disperde illos.
+53,8: Voluntarie sacrifibo tibi, et confitebor nomini tuo quoniam bonum est.
+53,9: Quoniam ex omni tribulatione eripuisti [me] 
+
+HALLO ALEX!
 <!-- If abbreviations are expanded silently, this practice should be documented in the editorialDecl, either with a normalization element or a p. -->
-
-
-
