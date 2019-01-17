@@ -58,8 +58,12 @@
     </teiHeader>
     <facsimile>
         <!-- Faksimile einbinden -->
-        <surface xml:id="fol.1">
-            <graphic mimeType="image/jpeg" url="file:///1.jpg" xml:id="img.fol.1"/>
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///1r.jpg" xml:id="img.fol.1r"/>
+            <zone/>
+        </surface>
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///1v.jpg" xml:id="img.fol.1v"/>
             <zone/>
         </surface>
     </facsimile>
@@ -78,38 +82,39 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio" facs="#fol.1" xml:id="Folio-1"/>
-            <div type="original" xml:lang="la">
+            <pb type="folio" facs="#fol.1r" xml:id="Folio-1r"/>
+                <div type="original" xml:lang="la">
+                    <lg>
+                        <l xml:id="L1"><choice>
+                                <abbr>Qm</abbr>
+                                <expan>Quoniam</expan>
+                            </choice>
+                            <choice>
+                                <abbr>ds</abbr>
+                                <expan>Deus</expan>
+                            </choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="#ER"
+                                place="above">52.6.</add></l>
+                        <l xml:id="L2">nibus placent: confusi sunt</l>
+                        <l xml:id="L3">quoniam Deus sprevit eos.</l>
+                        <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
+                        <l xml:id="L5">cum convertit Deus captivita[tem]</l>
+                    </lg>
+                </div>
+                <div type="translation" xml:lang="de">
+                    <lg>
+                        <l corresp="#L1"/>
+                        <l corresp="#L2"/>
+                    </lg>
+                </div>
+            <pb type="folio" facs="#fol.1v" xml:id="Folio-1v"/>    <!-- verso -->
+            <div>
                 <lg>
-                    <l xml:id="L1"><choice><abbr>Qm</abbr><expan>Quoniam</expan></choice>
-                        <choice><abbr>ds</abbr><expan>Deus</expan></choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="#ER"
-                            place="above">52.6.</add></l>
-                    <l xml:id="L2">nibus placent: confusi sunt</l>
-                    <l xml:id="L3">quoniam Deus sprevit eos.</l>
-                    <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
-                    <l xml:id="L5">cum convertit Deus captivita[tem]</l>
+                    <l>53,7: Averte mala inimicis meis: in veritate tua disperde illos.</l>
+                    <l>53,8: Voluntarie sacrifibo tibi, et confitebor nomini tuo quoniam bonum
+                        est.</l>
+                    <l> 53,9: Quoniam ex omni tribulatione eripuisti [me]</l>
                 </lg>
             </div>
-            <div type="translation" xml:lang="de">
-                <lg>
-                    <l corresp="#L1"/>
-                    <l corresp="#L2"/>
-                </lg>
-            </div>
-            <div><p> 52,6: Quoniam Deus dissipavit ossa eorum qui hominibus placent: confusi sunt,
-                quoniam Deus sprevit eos. 52,7: Quis dabit ex Sion salutare Israhel cum convertit
-                Deus captivita[tem] </p>
-            </div>
-
         </body>
     </text>
 </TEI>
-
-02_ps_53_7-8
-
-53,7: Averte mala inimicis meis: in veritate tua disperde illos.
-53,8: Voluntarie sacrifibo tibi, et confitebor nomini tuo quoniam bonum est.
-53,9: Quoniam ex omni tribulatione eripuisti [me] 
-
-HALLO ALEX!
-<!-- If abbreviations are expanded silently, this practice should be documented in the editorialDecl, either with a normalization element or a p. -->
