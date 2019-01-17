@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<!-- recto -->
-67,10: [Pluviam voluntariam segregabis] Deus, hereditati tuae, et infirmata est, tu vero perfecisti eam.
-67,11: Animalia tua habitabunt in ea, parasti in dulcedine tua pauperi, Deus.
-67,12: Dominus dabit verbum evangelizantibus
-
-
-
-<!-- verso -->
-
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../odd/out/group1_schema_v2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- achtung, da passt was mit dem Text nicht -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>67,18-20</title>
+                <title>PS 52,6–7</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -26,7 +17,7 @@
                     <name>Selina Galka</name>
                 </respStmt>
                 <respStmt>
-                    <resp>XML Encoding by</resp>
+                    <resp>XML encoding by</resp>
                     <name>Angelika Hechtl</name>
                 </respStmt>
             </titleStmt>
@@ -35,14 +26,19 @@
                 <pubPlace>Graz</pubPlace>
                 <date when="2018-12-13">2018</date>
                 <availability>
-                    <p>Dieses Werk ist lizenziert unter einer<ref target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>Lizenz. </p>
+                    <p>Dieses Werk ist lizenziert unter einer<ref
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                        Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International</ref>Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
+                        <settlement/>
+                        <repository/>
+                        <idno/>
                     </msIdentifier>
                     <msContents>
                         <textLang xml:lang="la">Lateinisch</textLang>
@@ -64,7 +60,11 @@
     <facsimile>
         <!-- Faksimile einbinden -->
         <surface>
-            <graphic url=""/>
+            <graphic mimeType="image/jpeg" url="file:///17r.jpg" xml:id="img.fol.17r"/>
+            <zone/>
+        </surface>
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///17v.jpg" xml:id="img.fol.17v"/>
             <zone/>
         </surface>
     </facsimile>
@@ -79,17 +79,30 @@
                         <msName xml:lang="la"/>
                     </msIdentifier>
                     <physDesc>
-                        <objectDesc>
-                            <supportDesc>
-                                <support>Pergament</support>
-                            </supportDesc>
-                        </objectDesc>
+                        <p>Pergamentfragment</p>
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio"/>
-            
+            <pb type="folio" facs="#fol.17r" xml:id="Folio-17r"/>
             <div type="original" xml:lang="la">
+                <lg>
+                    <l>
+                        67,10: [Pluviam voluntariam segregabis] Deus, hereditati tuae, et infirmata est, tu vero perfecisti eam.
+                        67,11: Animalia tua habitabunt in ea, parasti in dulcedine tua pauperi, Deus.
+                        67,12: Dominus dabit verbum evangelizantibus
+                        
+                    </l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
+            <pb type="folio" facs="#fol.17v" xml:id="Folio-17v"/>
+            <!-- verso -->
+            <div>
                 <lg>
                     <l xml:id="L1"><choice><abbr>Q<g ref="#"></g></abbr><expan>Quoniam</expan></choice>
                         <choice><abbr>ds</abbr><expan>Deus</expan></choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="ER"
@@ -97,28 +110,10 @@
                     <l xml:id="L2">nibus placent: confusi sunt</l>
                     <l xml:id="L3">quoniam Deus sprevit eos.</l>
                     <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
-                    <l xml:id="L5">cum convertit Deus captivita[tem]</l>
+                    <l xml:id="L5">cum convertit Deus captivita[tem]</l>  
                 </lg>
             </div>
-            <div type="translation" xml:lang="de">
-                <lg>
-                    <l>blabla</l>
-                </lg>
-            </div>
-            <!--  
-            <p> 
-                Ps 67,18-20
-                67,18: [multi]plex milia tetantum, Dominus in Sinai in sancto
-                67,19: Ascendisti in altum cepisti captivitatem accepisti dona in hominibus. Etenim non credentes
-                inhabitare Dominum Deum
-                67,20: Benedictus Dominus die cottidie
-            </p>
-            -->
         </body>
     </text>
 </TEI>
-<!-- If abbreviations are expanded silently, this practice should be documented in the editorialDecl, either with a normalization element or a p. -->
-
-
-
 
