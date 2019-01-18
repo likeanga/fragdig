@@ -26,9 +26,9 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                            Commons Attribution-NonCommercial-ShareAlike 4.0
-                        International</ref>Lizenz. </p>
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+                        Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
             </publicationStmt>
@@ -83,36 +83,43 @@
                 </msDesc>
             </listBibl>
             <pb type="folio" facs="#fol.1r" xml:id="Folio-1r"/>
-                <div type="original" xml:lang="la">
-                    <lg>
-                        <l xml:id="L1"><choice>
-                                <abbr>Qm</abbr>
-                                <expan>Quoniam</expan>
-                            </choice>
-                            <choice>
-                                <abbr>ds</abbr>
-                                <expan>Deus</expan>
-                            </choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="#ER"
-                                place="above">52.6.</add></l>
-                        <l xml:id="L2">nibus placent: confusi sunt</l>
-                        <l xml:id="L3">quoniam Deus sprevit eos.</l>
-                        <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
-                        <l xml:id="L5">cum convertit Deus captivita[tem]</l>
-                    </lg>
-                </div>
-                <div type="translation" xml:lang="de">
-                    <lg>
-                        <l corresp="#L1"/>
-                        <l corresp="#L2"/>
-                    </lg>
-                </div>
-            <pb type="folio" facs="#fol.1v" xml:id="Folio-1v"/>    <!-- verso -->
-            <div>
+            <div type="original" xml:lang="la">
+                <lg>
+                    <l xml:id="L1"><choice>
+                            <abbr>Qm</abbr>
+                            <expan>Quoniam</expan>
+                        </choice>
+                        <choice>
+                            <abbr>ds</abbr>
+                            <expan>Deus</expan>
+                        </choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="#ER"
+                            place="above">52.6.</add></l>
+                    <l xml:id="L2">nibus placent: confusi sunt</l>
+                    <l xml:id="L3">quoniam Deus sprevit eos.</l>
+                    <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
+                    <l xml:id="L5">cum convertit Deus captivita[tem]</l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
+            <pb type="folio" facs="#fol.1v" xml:id="Folio-1v"/>
+            <!-- verso -->
+            <div type="original">
                 <lg>
                     <l>53,7: Averte mala inimicis meis: in veritate tua disperde illos.</l>
                     <l>53,8: Voluntarie sacrifibo tibi, et confitebor nomini tuo quoniam bonum
                         est.</l>
                     <l> 53,9: Quoniam ex omni tribulatione eripuisti [me]</l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
                 </lg>
             </div>
         </body>
