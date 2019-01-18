@@ -1,0 +1,5 @@
+1) info bzgl. psalm auch im xml auszeichnen
+2) milestone-elemente zulassen
+3) im xsl automatisch die url generieren
+4) Referenzfiles als liste machen
+5) erlauben in l "n" attribut
