@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>PS 52,6–7</title>
+                <title>PS 5,7-8, PS 5 1-13, RUBRCIC 6,2</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -82,7 +82,7 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio" facs="#fol.15r" xml:id="Folio-15r"/>
+            <pb type="folio" facs="#img.fol.15r"/>
             <div type="original" xml:lang="la">
                 <lg>
                     <l>
@@ -98,9 +98,9 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            <pb type="folio" facs="#fol.15v" xml:id="Folio-15v"/>
+            <pb type="folio" facs="#img.fol.15v"/>
             <!-- verso -->
-            <div>
+            <div type="original" xml:lang="la">
                 <lg>
                     <l>5,12: nomen tuum,
                         5,13: quoniam tu benedicis iusto, Domine ut scuto bonae voluntatis tuae coronasti nos.

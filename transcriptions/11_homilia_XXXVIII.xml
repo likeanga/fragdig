@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>PS 52,6–7</title>
+                <title>Homilia XXXVIII</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -79,7 +79,7 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio" facs="#fol.11r" xml:id="Folio-11r"/>
+            <pb type="folio" facs="#img.fol.11r"/>
             <div type="original" xml:lang="la">
                 <lg>
                     <l>

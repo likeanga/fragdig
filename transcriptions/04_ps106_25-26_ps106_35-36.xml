@@ -1,9 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-106,25: Dixit et stetit spiritus procellae et exaltati sunt
-106,26: Ascendunt usque ad celos, et descendunt usque ad abyssos, anima eorum in malis [tabescebat.]
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PS 106,25–26 und 106,35-36</title>
+                <author>Unknown</author>
+                <respStmt>
+                    <resp>Originally prepared by</resp>
+                    <name>Erich Renhart</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Revised and edited by</resp>
+                    <name>Selina Galka</name>
+                </respStmt>
+                <respStmt>
+                    <resp>XML encoding by</resp>
+                    <name>Angelika Hechtl</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Zentrum für Informationsmodellierung, Universität Graz</publisher>
+                <pubPlace>Graz</pubPlace>
+                <date when="2018-12-13">2018</date>
+                <availability>
+                    <p>Dieses Werk ist lizenziert unter einer<ref
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
+                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+                        Lizenz. </p>
+                </availability>
+                <idno type="PID">hier brauchen wir den PID</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement/>
+                        <repository/>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang xml:lang="la">Lateinisch</textLang>
+                        <msItem>
+                            <author/>
+                            <title/>
+                        </msItem>
+                    </msContents>
+                    <history>
+                        <origin>
+                            <origDate notBefore="0800" notAfter="1600"/>
+                            <origPlace/>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <!-- Faksimile einbinden -->
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///4r.jpg" xml:id="img.fol.4r"/>
+            <zone/>
+        </surface>
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///4v.jpg" xml:id="img.fol.4v"/>
+            <zone/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <listBibl>
+                <msDesc>
+                    <!-- noch mehr Elemente -->
+                    <msIdentifier>
+                        <settlement>Graz</settlement>
+                        <repository>GAMS</repository>
+                        <msName xml:lang="la"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>Pergamentfragment</p>
+                    </physDesc>
+                </msDesc>
+            </listBibl>
+            
+            <!-- recto -->
+            <pb type="folio" facs="#img.fol.4r"/>
+            <div type="original" xml:lang="la">
+                <lg>
+
+                        <l>106,25: Dixit et stetit spiritus procellae et exaltati sunt
+                            106,26: Ascendunt usque ad celos, et descendunt usque ad abyssos, anima eorum in malis [tabescebat.]
+                        </l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
+            
+            <!-- verso -->
+            <pb type="folio" facs="#img.fol.4v"/>
+            <div type="original" xml:lang="la">
+                <lg>
+                    <l>
+                        106,35: Posuit desertum in stagna aquarum et terram sine aqua in exitus aquarum.
+                        106,36: Et collocavit illic esurientes, et constituerunt [civitatem habitationis.] 
+                    </l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
 
 
 
-106,35: Posuit desertum in stagna aquarum et terram sine aqua in exitus aquarum.
-106,36: Et collocavit illic esurientes, et constituerunt [civitatem habitationis.] 

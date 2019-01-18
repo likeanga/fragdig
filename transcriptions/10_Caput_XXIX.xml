@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>PS 52,6–7</title>
+                <title>Caput XXIX</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -79,7 +79,7 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio" facs="#fol.10r" xml:id="Folio-10r"/>
+            <pb type="folio" facs="#img.fol.10r"/>
             <div type="original" xml:lang="la">
                 <lg>
                     <l>
@@ -88,7 +88,7 @@
                         
                         (0911C) [In medio nationis prav]
                         ae et perversae, inter quos luce[tis sicut luminaria]
-                        in mundo <PL: meridie>, verbum vitae con[tinentes (Philip. II). Hinc Io]
+                        in mundo <!--<PL: meridie>-->, verbum vitae con[tinentes (Philip. II). Hinc Io]
                             annes Pergami Ecclesiae attesta[tur dicens: Scio ubi habitas, ubi sedes est Satanae: et tenens nomen
                             meum, non negasti fidem meam (Apoc. II).]
                     </l>
