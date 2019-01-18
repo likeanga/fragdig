@@ -98,11 +98,17 @@
             </div>
             <pb type="folio" facs="#fol.8v" xml:id="Folio-8v"/>
             <!-- verso -->
-            <div>
+            <div type="original" xml:lang="la">
                 <lg>
                     <l>15,5: Tunc conturbati sunt principes Edom, robustos Moab obtinuit tremor,
                         obriguerunt omnes habitatores Chanaan.</l>
 
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
                 </lg>
             </div>
         </body>
