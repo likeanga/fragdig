@@ -1,13 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-6,9: Discedite a me omnes qui operamini iniquitatem, quoniam exaudivit Dominus vocem fletus mei
-6,10: Exaudivit Dominus deprecacionem meam, dominus orationem meam suscepit
-6,11: Erubescant et conturbentur vehe[menter omnes inimici mei]
-[in margine: Servite Domino in timore]
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PS 52,6–7</title>
+                <author>Unknown</author>
+                <respStmt>
+                    <resp>Originally prepared by</resp>
+                    <name>Erich Renhart</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Revised and edited by</resp>
+                    <name>Selina Galka</name>
+                </respStmt>
+                <respStmt>
+                    <resp>XML encoding by</resp>
+                    <name>Angelika Hechtl</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Zentrum für Informationsmodellierung, Universität Graz</publisher>
+                <pubPlace>Graz</pubPlace>
+                <date when="2018-12-13">2018</date>
+                <availability>
+                    <p>Dieses Werk ist lizenziert unter einer<ref
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                        Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International</ref>Lizenz. </p>
+                </availability>
+                <idno type="PID">hier brauchen wir den PID</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement/>
+                        <repository/>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang xml:lang="la">Lateinisch</textLang>
+                        <msItem>
+                            <author/>
+                            <title/>
+                        </msItem>
+                    </msContents>
+                    <history>
+                        <origin>
+                            <origDate notBefore="0800" notAfter="1600"/>
+                            <origPlace/>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <!-- Faksimile einbinden -->
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///16r.jpg" xml:id="img.fol.16r"/>
+            <zone/>
+        </surface>
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///16v.jpg" xml:id="img.fol.16v"/>
+            <zone/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <listBibl>
+                <msDesc>
+                    <!-- noch mehr Elemente -->
+                    <msIdentifier>
+                        <settlement>Graz</settlement>
+                        <repository>GAMS</repository>
+                        <msName xml:lang="la"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>Pergamentfragment</p>
+                    </physDesc>
+                </msDesc>
+            </listBibl>
+            <pb type="folio" facs="#fol.16r" xml:id="Folio-16r"/>
+            <div type="original" xml:lang="la">
+                <lg>
+                    <l>
+                        7,5: mala, decidam merito ab inimicis meis inanis
+                        7,6: Persequantur inimicus animam meam et comprehendatet conculcet in terra vitam meam et
+                        gloriam meam in pulverem deducat. 
+                    </l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
+            <pb type="folio" facs="#fol.16v" xml:id="Folio-16v"/>
+            <!-- verso -->
+            <div>
+                <lg>
+                    <l>67,24: [lingua canum tuorum ex in]imicis ab ipso.</l>     
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
 
 
-7,5: mala, decidam merito ab inimicis meis inanis
-7,6: Persequantur inimicus animam meam et comprehendatet conculcet in terra vitam meam et
-gloriam meam in pulverem deducat. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

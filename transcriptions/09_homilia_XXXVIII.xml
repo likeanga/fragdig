@@ -1,19 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-GREGORIUS I, Homiliae in Evangelia, 76, 1289B (auctor 540-604)
-(PL 76 1289B) HOMILIA XXXVIII
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-[Diligite]
-inimicos vestros, benefacite [his qui oderunt vos (Luc. VI, 27).]
-Ille ergo securus amat, qui propter [Deum illum am]
-at a quo se intelligit non [amari. Magna sunt haec,]
-alta sunt haec, et multis ad ex[hibendum difficilia, sed]
-tamen ista est vestis nuptialis. [Quisquis autem hanc recum]
-bens in nuptiis non habet, iam [sollicitus metuat, in]
-grediente rege, quando mit[tatur foras. Ecce enim dicitur:]
-Intravit rex ad nuptias [ut videret discum]
-bentes, et vidit ibi hominem non [vestitum veste nupt]
-iali. Nos sumus, fratres charissimi, [qui in nuptiis Verbi discumb]
-imus, qui iam fidem in Ecc[lesia habemus, qui]
-sacrae epulis pascimur, qui [coniunctam Deo Ecclesiam]
-esse gaudemus. (1289C) [Considerate, rogo, …]
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PS 52,6–7</title>
+                <author>Unknown</author>
+                <respStmt>
+                    <resp>Originally prepared by</resp>
+                    <name>Erich Renhart</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Revised and edited by</resp>
+                    <name>Selina Galka</name>
+                </respStmt>
+                <respStmt>
+                    <resp>XML encoding by</resp>
+                    <name>Angelika Hechtl</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Zentrum für Informationsmodellierung, Universität Graz</publisher>
+                <pubPlace>Graz</pubPlace>
+                <date when="2018-12-13">2018</date>
+                <availability>
+                    <p>Dieses Werk ist lizenziert unter einer<ref
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                        Commons Attribution-NonCommercial-ShareAlike 4.0
+                        International</ref>Lizenz. </p>
+                </availability>
+                <idno type="PID">hier brauchen wir den PID</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement/>
+                        <repository/>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang xml:lang="la">Lateinisch</textLang>
+                        <msItem>
+                            <author/>
+                            <title/>
+                        </msItem>
+                    </msContents>
+                    <history>
+                        <origin>
+                            <origDate notBefore="0800" notAfter="1600"/>
+                            <origPlace/>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <!-- Faksimile einbinden -->
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///9r.jpg" xml:id="img.fol.9r"/>
+            <zone/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <listBibl>
+                <msDesc>
+                    <!-- noch mehr Elemente -->
+                    <msIdentifier>
+                        <settlement>Graz</settlement>
+                        <repository>GAMS</repository>
+                        <msName xml:lang="la"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>Pergamentfragment</p>
+                    </physDesc>
+                </msDesc>
+            </listBibl>
+            <pb type="folio" facs="#fol.9r" xml:id="Folio-9r"/>
+            <div type="original" xml:lang="la">
+                <lg>
+                    <l>GREGORIUS I, Homiliae in Evangelia, 76, 1289B (auctor 540-604)
+                        (PL 76 1289B) HOMILIA XXXVIII
+                        
+                        [Diligite]
+                        inimicos vestros, benefacite [his qui oderunt vos (Luc. VI, 27).]
+                        Ille ergo securus amat, qui propter [Deum illum am]
+                        at a quo se intelligit non [amari. Magna sunt haec,]
+                        alta sunt haec, et multis ad ex[hibendum difficilia, sed]
+                        tamen ista est vestis nuptialis. [Quisquis autem hanc recum]
+                        bens in nuptiis non habet, iam [sollicitus metuat, in]
+                        grediente rege, quando mit[tatur foras. Ecce enim dicitur:]
+                        Intravit rex ad nuptias [ut videret discum]
+                        bentes, et vidit ibi hominem non [vestitum veste nupt]
+                        iali. Nos sumus, fratres charissimi, [qui in nuptiis Verbi discumb]
+                        imus, qui iam fidem in Ecc[lesia habemus, qui]
+                        sacrae epulis pascimur, qui [coniunctam Deo Ecclesiam]
+                        esse gaudemus. (1289C) [Considerate, rogo, …]</l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
+
+
