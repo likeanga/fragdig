@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>PS 52,6–7</title>
+                <title>PS 62,6 und PS 63,2</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -82,7 +82,7 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio" facs="#fol.13r" xml:id="Folio-13r"/>
+            <pb type="folio" facs="#img.fol.13r"/>
             <div type="original" xml:lang="la">
                 <lg>
                     <l>62,6: Sicut adipe et pinguedine repleatur anima mea: et labia exultationis [laudabit os meum.]</l>
@@ -94,9 +94,9 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            <pb type="folio" facs="#fol.13v" xml:id="Folio-13v"/>
+            <pb type="folio" facs="#img.fol.13v"/>
             <!-- verso -->
-            <div>
+            <div type="original" xml:lang="la">
                 <lg>
                     <l>63,2:[Exaudi Deus orationem meam cum] deprecor, a timore inimici eripe animam meam.</l>
                     

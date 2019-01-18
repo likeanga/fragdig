@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>PS 52,6–7</title>
+                <title>PS 52,6–7 und 53,7-9</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -82,7 +82,9 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio" facs="#fol.1r" xml:id="Folio-1r"/>
+            
+            <!-- recto -->
+            <pb type="folio" facs="#img.fol.1r"/>
             <div type="original" xml:lang="la">
                 <lg>
                     <l xml:id="L1"><choice>
@@ -106,9 +108,10 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            <pb type="folio" facs="#fol.1v" xml:id="Folio-1v"/>
+            
             <!-- verso -->
-            <div type="original">
+            <pb type="folio" facs="#img.fol.1v"/>
+            <div type="original" xml:lang="la">
                 <lg>
                     <l>53,7: Averte mala inimicis meis: in veritate tua disperde illos.</l>
                     <l>53,8: Voluntarie sacrifibo tibi, et confitebor nomini tuo quoniam bonum

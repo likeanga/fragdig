@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>PS 52,6–7</title>
+                <title>PS 67,17 und 67,24</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -82,7 +82,7 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio" facs="#fol.14r" xml:id="Folio-14r"/>
+            <pb type="folio" facs="#img.fol.14r"/>
             <div type="original" xml:lang="la">
                 <lg>
                     <l>67,17: Mons in quo beneplacitum est Deo habita[re in eo, etenim Dominus habitabit in finem.]</l>
@@ -94,9 +94,9 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            <pb type="folio" facs="#fol.14v" xml:id="Folio-14v"/>
+            <pb type="folio" facs="#img.fol.14v"/>
             <!-- verso -->
-            <div>
+            <div type="original" xml:lang="la">
                 <lg>
                     <l>67,24: [lingua canum tuorum ex in]imicis ab ipso.</l>     
                 </lg>

@@ -1,11 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-56,8: [Paratum cor meum] Deus, paratum cor meum, cantabo et spallam [!] in gloria mea. [Vg: et
-psalmum dicam]
-56,9: Exurge […] psalterium et cithara
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PS 56,8–9 und 59,11-12</title>
+                <author>Unknown</author>
+                <respStmt>
+                    <resp>Originally prepared by</resp>
+                    <name>Erich Renhart</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Revised and edited by</resp>
+                    <name>Selina Galka</name>
+                </respStmt>
+                <respStmt>
+                    <resp>XML encoding by</resp>
+                    <name>Angelika Hechtl</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Zentrum für Informationsmodellierung, Universität Graz</publisher>
+                <pubPlace>Graz</pubPlace>
+                <date when="2018-12-13">2018</date>
+                <availability>
+                    <p>Dieses Werk ist lizenziert unter einer<ref
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
+                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+                        Lizenz. </p>
+                </availability>
+                <idno type="PID">hier brauchen wir den PID</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement/>
+                        <repository/>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang xml:lang="la">Lateinisch</textLang>
+                        <msItem>
+                            <author/>
+                            <title/>
+                        </msItem>
+                    </msContents>
+                    <history>
+                        <origin>
+                            <origDate notBefore="0800" notAfter="1600"/>
+                            <origPlace/>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <!-- Faksimile einbinden -->
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///3r.jpg" xml:id="img.fol.3r"/>
+            <zone/>
+        </surface>
+        <surface>
+            <graphic mimeType="image/jpeg" url="file:///3v.jpg" xml:id="img.fol.3v"/>
+            <zone/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <listBibl>
+                <msDesc>
+                    <!-- noch mehr Elemente -->
+                    <msIdentifier>
+                        <settlement>Graz</settlement>
+                        <repository>GAMS</repository>
+                        <msName xml:lang="la"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>Pergamentfragment</p>
+                    </physDesc>
+                </msDesc>
+            </listBibl>
+            
+            <!-- recto -->
+            <pb type="folio" facs="#img.fol.3r"/>
+            <div type="original" xml:lang="la">
+                <lg>
+                    <l>56,8: [Paratum cor meum] Deus, paratum cor meum, cantabo et spallam [!] in gloria mea. [Vg: et
+                        psalmum dicam]
+                        56,9: Exurge […] psalterium et cithara</l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
+            
+            <!-- verso -->
+            <pb type="folio" facs="#img.fol.3v"/>
+            <div type="original" xml:lang="la">
+                <lg>
+                    <l>
+                        59,11: Quis deducet me in civitatem munitam, quis deducet me usque Idumaeam
+                        59,12: Nonne tu Deus qui repulisti nos et non ex
+                    </l>
+                </lg>
+            </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
 
 
 
 
-59,11: Quis deducet me in civitatem munitam, quis deducet me usque Idumaeam
-59,12: Nonne tu Deus qui repulisti nos et non ex
+
+

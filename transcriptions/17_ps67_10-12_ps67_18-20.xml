@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>PS 52,6–7</title>
+                <title>PS 67,10-12 und PS 67,18-20</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -83,7 +83,7 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio" facs="#fol.17r" xml:id="Folio-17r"/>
+            <pb type="folio" facs="#img.fol.17r"/>
             <div type="original" xml:lang="la">
                 <lg>
                     <l>
@@ -100,9 +100,9 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            <pb type="folio" facs="#fol.17v" xml:id="Folio-17v"/>
+            <pb type="folio" facs="#img.fol.17v"/>
             <!-- verso -->
-            <div>
+            <div type="original" xml:lang="la">
                 <lg>
                     <l xml:id="L1"><choice><abbr>Q<g ref="#"></g></abbr><expan>Quoniam</expan></choice>
                         <choice><abbr>ds</abbr><expan>Deus</expan></choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="ER"

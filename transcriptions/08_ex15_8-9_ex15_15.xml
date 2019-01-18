@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>PS 52,6–7</title>
+                <title>EX 15,8-9 und EX 15,15</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -82,7 +82,7 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            <pb type="folio" facs="#fol.8r" xml:id="Folio-8r"/>
+            <pb type="folio" facs="#img.fol.8r"/>
             <div type="original" xml:lang="la">
                 <lg>
                     <l> 15,8: abyssi in medio mari. </l>
@@ -96,9 +96,9 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            <pb type="folio" facs="#fol.8v" xml:id="Folio-8v"/>
+            <pb type="folio" facs="#img.fol.8v"/>
             <!-- verso -->
-            <div>
+            <div type="original" xml:lang="la">
                 <lg>
                     <l>15,5: Tunc conturbati sunt principes Edom, robustos Moab obtinuit tremor,
                         obriguerunt omnes habitatores Chanaan.</l>
