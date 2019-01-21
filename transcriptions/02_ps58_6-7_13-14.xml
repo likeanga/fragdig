@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -26,8 +26,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
                         Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -82,14 +82,18 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            
+
             <!-- recto -->
             <pb type="folio" facs="#img.fol.2r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>58,6: [Et tu Domine Deus] virtutum, Deus Israel. Intende ad visitandas omnes gentes, non miserearis
-                        omnibus qui operantur iniquitatem.
-                        58,7: Convertentur ad vesperam et famen patientur ut canes et circu[ibunt civitatem].</l>
+                    <!-- Problem: Text auf Fragmentbild beginnt erst bei intende -->
+                    <l><m ana="58,6"/>[Et tu Domine Deus] virtutum, Deus Israel. Intende ad
+                        visitandas omnes gentes,</l>
+                    <l>non miserearis omnibus qui ope</l>
+                    <l>rantur iniquitatem.</l>
+                    <l><m ana="58,7"/>Convertentur ad vesperam et fa</l>
+                    <l>men patientur ut canes et circu[ibunt civitatem]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -98,14 +102,18 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            
+
             <!-- verso -->
             <pb type="folio" facs="#img.fol.2v"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>58,13: Delictum oris eorum sermonem labiorum ipsorum: et comprehendant in superbia sua. Et de
-                        execratione et mendatio annuntiabuntur
-                        58,14: in consumatione, in ira consumationis et non erunt. Et scient quia Deus dominabitur [Iacob].</l>
+                    <!-- erste Zeile nicht auf Bild! -->
+                    <l><m ana="58,13"/>Delictum oris eorum sermonem labiorum </l>
+                    <l>ipsorum: et comprehendant in superbia sua.</l>
+                    <l>Et de execratione et mendatio an</l>
+                    <l>nuntiabuntur <m ana="58,14"/>in consumatione,</l>
+                    <l>in ira consumationis et non erunt.</l>
+                    <l>Et scient quia Deus dominabitur [Iacob].</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -117,9 +125,3 @@
         </body>
     </text>
 </TEI>
-
-
-
-
-
-

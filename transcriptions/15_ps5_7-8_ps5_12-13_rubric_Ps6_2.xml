@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> -->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -26,8 +26,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0
                         International</ref>Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -85,11 +85,12 @@
             <pb type="folio" facs="#img.fol.15r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>
-                        5,7: [iniquita]tem perdes omnes qui locuntur mendacium. Virum sanguinum et dolosum abominabitur
-                        Dominus,
-                        5,8: ego autem in multitudine misericordiae tuae. Introibo in domum tuam, adorab[o ad] templum
-                        sanctum tuum in timo[re tuo.]</l>
+                    <l><m ana="5,7"/>[iniquita]tem perdes omnes qui locuntur mendacium.</l>
+                    <l>Virum sanguinum et dolosum abomi</l>
+                    <l>nabitur Dominus, <m ana="5,8"/>ego autem in multitudine</l>
+                    <l>misericordiae tuae.</l>
+                    <l>Introibo in domum tuam, adorab[o ad] </l>
+                    <l>templum sanctum tuum in timo[re tuo.]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -102,28 +103,15 @@
             <!-- verso -->
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>5,12: nomen tuum,
-                        5,13: quoniam tu benedicis iusto, Domine ut scuto bonae voluntatis tuae coronasti nos.
-                        Rubric: PSAL[mus] DD … VI
-                        6,2: DOMINE, NE IN FURORE tuo arguas me neque in ira tua corripias me.</l>     
+                    <l><m ana="5,12"/>nomen tuum, <m ana="5,13"/>quoniam tu benedicis iusto,</l>
+                    <l>Domine ut scuto bonae voluntatis tuae</l>
+                    <l>coronasti nos. <!-- ab hier rubriziert -->PSAL[mus] DD … VI <m ana="6,2"
+                        />DOMI</l>
+                    <l>NE, NE IN FURORE</l>
+                    <l>tuo arguas me neque</l>
+                    <l>in ira tua corripias me.</l>
                 </lg>
             </div>
         </body>
     </text>
 </TEI>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

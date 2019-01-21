@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> -->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -85,9 +85,9 @@
             <pb type="folio" facs="#img.fol.8r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l> 15,8: abyssi in medio mari. </l>
-                    <l>15,9: Dixit inimicus, persequar et comprehendam, dividam spolia, implebitur
-                        anima mea</l>
+                    <l><m ana="15,8"/>abyssi in medio mari.</l>
+                    <l><m ana="15,9"/>Dixit inimicus, persequar et comprehendam,</l>
+                    <l>dividam spolia, implebitur anima mea</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -100,8 +100,9 @@
             <!-- verso -->
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>15,5: Tunc conturbati sunt principes Edom, robustos Moab obtinuit tremor,
-                        obriguerunt omnes habitatores Chanaan.</l>
+                    <l><m ana="15,5"/>Tunc conturbati sunt principes Edom,</l>
+                    <l>robustos Moab obtinuit tremor, ob</l>
+                    <l>riguerunt omnes habitatores Chanaan.</l>
 
                 </lg>
             </div>

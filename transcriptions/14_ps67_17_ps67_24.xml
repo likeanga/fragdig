@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -26,8 +26,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0
                         International</ref>Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -85,7 +85,8 @@
             <pb type="folio" facs="#img.fol.14r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>67,17: Mons in quo beneplacitum est Deo habita[re in eo, etenim Dominus habitabit in finem.]</l>
+                    <l><m ana="67,17"/>Mons in quo beneplacitum est Deo habita</l>
+                    <l>[re in eo, etenim Dominus habitabit in finem.]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -98,21 +99,10 @@
             <!-- verso -->
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>67,24: [lingua canum tuorum ex in]imicis ab ipso.</l>     
+                    <l><m ana="67,24"/>[lingua canum tuorum ex in]</l>
+                    <l>imicis ab ipso.</l>
                 </lg>
             </div>
         </body>
     </text>
 </TEI>
-
-
-
-
-
-
-
-
-
-
-
-

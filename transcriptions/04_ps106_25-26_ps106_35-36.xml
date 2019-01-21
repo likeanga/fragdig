@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -26,8 +26,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
                         Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -82,15 +82,14 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            
+
             <!-- recto -->
             <pb type="folio" facs="#img.fol.4r"/>
             <div type="original" xml:lang="la">
                 <lg>
-
-                        <l>106,25: Dixit et stetit spiritus procellae et exaltati sunt
-                            106,26: Ascendunt usque ad celos, et descendunt usque ad abyssos, anima eorum in malis [tabescebat.]
-                        </l>
+                    <l><m ana="106,25"/>Dixit et stetit spiritus procellae et exaltati sunt</l>
+                    <l><m ana="106,26"/>Ascendunt usque ad celos, et descendunt</l>
+                    <l>usque ad abyssos, anima eorum in malis [tabescebat.]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -99,15 +98,16 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            
+
             <!-- verso -->
             <pb type="folio" facs="#img.fol.4v"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>
-                        106,35: Posuit desertum in stagna aquarum et terram sine aqua in exitus aquarum.
-                        106,36: Et collocavit illic esurientes, et constituerunt [civitatem habitationis.] 
-                    </l>
+                    <l><m ana="106,35"/>Posuit desertum in stagna aquarum</l>
+                    <l>et terram sine aqua in exitus aquarum.</l>
+                    <l><m ana="106,36"/>Et collocavit illic esurientes, et consti</l>
+                    <l>tuerunt [civitatem habitationis.]</l>
+                    <!-- auf Fragment abgeschnitten -->
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -119,6 +119,3 @@
         </body>
     </text>
 </TEI>
-
-
-

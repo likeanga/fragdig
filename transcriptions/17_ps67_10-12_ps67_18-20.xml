@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> -->
 
-<!-- achtung, da passt was mit dem Text nicht -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -27,8 +26,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0
                         International</ref>Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -86,12 +85,12 @@
             <pb type="folio" facs="#img.fol.17r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>
-                        67,10: [Pluviam voluntariam segregabis] Deus, hereditati tuae, et infirmata est, tu vero perfecisti eam.
-                        67,11: Animalia tua habitabunt in ea, parasti in dulcedine tua pauperi, Deus.
-                        67,12: Dominus dabit verbum evangelizantibus
-                        
-                    </l>
+                    <l><m ana="67,10"/>[Pluviam voluntariam segregabis]</l>
+                    <l>Deus, hereditati tuae, et infirmata est,</l>
+                    <l>tu vero perfecisti eam.</l>
+                    <l><m ana="67,11"/>Animalia tua habitabunt in ea, pa</l>
+                    <l>rasti in dulcedine tua pauperi, Deus.</l>
+                    <l><m ana="67,12"/>Dominus dabit verbum evangelizantibus</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -104,16 +103,13 @@
             <!-- verso -->
             <div type="original" xml:lang="la">
                 <lg>
-                    <l xml:id="L1"><choice><abbr>Q<g ref="#"></g></abbr><expan>Quoniam</expan></choice>
-                        <choice><abbr>ds</abbr><expan>Deus</expan></choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="ER"
-                            place="above">52.6.</add></l> <!-- milestone element -->
-                    <l xml:id="L2">nibus placent: confusi sunt</l>
-                    <l xml:id="L3">quoniam Deus sprevit eos.</l>
-                    <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
-                    <l xml:id="L5">cum convertit Deus captivita[tem]</l>  
+                    <l><m ana="67,18"/>[multi]plex milia tetantum, Dominus in Sinai in sancto</l>
+                    <l><m ana="67,19"/>Ascendisti in altum cepisti captivitatem</l>
+                    <l>accepisti dona in hominibus.</l>
+                    <l>Etenim non credentes inhabitare Dominum Deum</l>
+                    <l><m ana="67,20"/>Benedictus Dominus die cottidie</l>
                 </lg>
             </div>
         </body>
     </text>
 </TEI>
-

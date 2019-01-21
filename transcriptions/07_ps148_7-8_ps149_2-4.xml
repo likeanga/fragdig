@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> -->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -26,8 +26,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
                         Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -82,13 +82,15 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            
+
             <!-- recto -->
             <pb type="folio" facs="#img.fol.7r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>148,7: Laudate Dominum de terra, dracones et omnes abyssi.
-                        148,8: Ignis, grando, nix, glacies, spiritus procellarum quae faciunt verbum eius.</l>
+                    <l><m ana="148,7"/>Laudate Dominum de terra, dracones et om</l>
+                    <l>nes abyssi.</l>
+                    <l><m ana="148,8"/>Ignis, grando, nix, glacies, spiritus procella</l>
+                    <l>rum quae faciunt verbum eius.</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -97,15 +99,15 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            
+
             <!-- verso -->
             <pb type="folio" facs="#img.fol.7v"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>
-                        149,2: et filii Sion exultent in rege suo.
-                        149,3: Laudent nomen eius in choro, in tympano et psalterio psallant ei.
-                        149,4: Quia bene placitum est Domino in popu[lo suo]</l>
+                    <l><m ana="149,2"/>et filii Sion exultent in rege suo.</l>
+                    <l><m ana="149,3"/>Laudent nomen eius in choro, in tympa</l>
+                    <l>no et psalterio psallant ei.</l>
+                    <l><m ana="149,4"/>Quia bene placitum est Domino in popu[lo suo]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -117,5 +119,3 @@
         </body>
     </text>
 </TEI>
-
-

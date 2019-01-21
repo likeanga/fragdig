@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -26,8 +26,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
                         Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -82,14 +82,16 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            
+
             <!-- recto -->
             <pb type="folio" facs="#img.fol.3r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>56,8: [Paratum cor meum] Deus, paratum cor meum, cantabo et spallam [!] in gloria mea. [Vg: et
-                        psalmum dicam]
-                        56,9: Exurge […] psalterium et cithara</l>
+                    <l><m ana="56,8"/>[Paratum cor meum]</l>
+                    <l>Deus, paratum cor meum,</l>
+                    <l>cantabo et spallam [!] in gloria mea.</l>
+                    <l>[Vg: et psalmum dicam] <m ana="56,9"/>Exurge […] psalterium et cithara</l>
+                    <!-- die letzte  Zeile ist eigentlich nicht mehr auf dem Bildfragment -->
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -98,15 +100,17 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            
+
             <!-- verso -->
             <pb type="folio" facs="#img.fol.3v"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>
-                        59,11: Quis deducet me in civitatem munitam, quis deducet me usque Idumaeam
-                        59,12: Nonne tu Deus qui repulisti nos et non ex
-                    </l>
+
+                    <l><m ana="59,11"/> Quis deducet me in civitatem munitam,</l>
+                    <l>quis deducet me usque Idumaeam</l>
+                    <l><m ana="59,12"/>Nonne tu Deus qui repulisti nos et non ex</l>
+                    <!-- die letzte  Zeile ist eigentlich nicht mehr auf dem Bildfragment -->
+
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -118,9 +122,3 @@
         </body>
     </text>
 </TEI>
-
-
-
-
-
-

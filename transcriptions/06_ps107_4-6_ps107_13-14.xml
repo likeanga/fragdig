@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -26,8 +26,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
                         Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -82,14 +82,18 @@
                     </physDesc>
                 </msDesc>
             </listBibl>
-            
+
             <!-- recto -->
             <pb type="folio" facs="#img.fol.6r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>107,4: et psallam tibi in nationibus.
-                        107,5: Quia magna super caelos misericordia tua et usque ad nubes veritas tua.
-                        107,6: Exaltare super caelos, Deus, et super omnem ter[ram gloria tua.]</l>
+                    <!-- erste und letzte Zeile nicht auf Bild -->
+                    <l><m ana="107,4"/>et psal</l>
+                    <l>lam tibi in nationibus.</l>
+                    <l><m ana="107,5"/>Quia magna super caelos misericordia tua et</l>
+                    <l>usque ad nubes veritas tua.</l>
+                    <l><m ana="107,6"/>Exaltare super caelos, Deus, et super omnem ter</l>
+                    <l>[ram gloria tua.]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -98,14 +102,17 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            
+
             <!-- verso -->
             <pb type="folio" facs="#img.fol.6v"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>
-                        107,13: Da nobis auxilium [de tribulatione] quia vana salus hominis.
-                        107,14: In Deo faciemus virtutem et ipse ad nichilum deducet inimicos nostros. [… ill.] </l>
+                    <!-- erste und letzte Zeile nicht auf Bild -->
+                    <l><m ana="107,13"/>Da nobis auxilium [de tribulatione]</l>
+                    <l>quia vana salus hominis.</l>
+                    <l><m ana="107,14"/>In Deo faciemus virtutem et ipse ad nichi</l>
+                    <l>lum deducet inimicos nostros.</l>
+                    <l>[… ill.]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -117,7 +124,3 @@
         </body>
     </text>
 </TEI>
-
-
-
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> -->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -26,8 +26,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0
                         International</ref>Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -85,7 +85,9 @@
             <pb type="folio" facs="#img.fol.13r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>62,6: Sicut adipe et pinguedine repleatur anima mea: et labia exultationis [laudabit os meum.]</l>
+                    <!-- erste Zeile abgeschnitten -->
+                    <l><m ana="62,6"/>Sicut adipe et pinguedine repleatur</l>
+                    <l>anima mea: et labia exultationis [laudabit os meum.]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -97,18 +99,12 @@
             <pb type="folio" facs="#img.fol.13v"/>
             <!-- verso -->
             <div type="original" xml:lang="la">
-                <lg>
-                    <l>63,2:[Exaudi Deus orationem meam cum] deprecor, a timore inimici eripe animam meam.</l>
-                    
+                <lg><!-- erste Zeile abgeschnitten -->
+                    <l><m ana="63,2"/>[Exaudi Deus orationem meam cum] deprecor, a timore in</l>
+                    <l>imici eripe animam meam.</l>
+
                 </lg>
             </div>
         </body>
     </text>
 </TEI>
-
-
-
-
-
-
-
