@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    exclude-result-prefixes="xs"
-    xpath-default-namespace="http://www.tei-c.org/ns/1.0" 
+    xmlns:t="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes="xs" 
     version="2.0">
     
-    <xsl:template match="TEI">
+    <xsl:template match="filelist">
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
         <html>
             <head>
@@ -75,159 +76,8 @@
                                 <div id="accordion">
                                                                         
                                     <!-- Hier überlegen, wie alle Dokumente einfügen. Dann wohl for-each document oder so eine card einfügen -->    
-                                    
-                                    <xsl:variable name="fragID">
-                                        <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/>
-                                    </xsl:variable>
-                                    <xsl:variable name="fragID">
-                                        <xsl:value-of select="replace(replace(replace(replace($fragID, ',', ''), ' ', ''), '–', ''), '.', '')"/>
-                                    </xsl:variable>
-                                    
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <xsl:attribute name="id">
-                                                <xsl:text>heading</xsl:text>
-                                                <xsl:value-of select="$fragID"/>
-                                            </xsl:attribute>
-                                            <h5 class="mb-0">
-                                                <button class="btn btn-link" data-toggle="collapse" aria-expanded="false">
-                                                    <xsl:attribute name="aria-controls">
-                                                        <xsl:text>collapse</xsl:text>
-                                                        <xsl:value-of select="$fragID"/>
-                                                    </xsl:attribute>
-                                                    <xsl:attribute name="data-target">
-                                                        <xsl:text>#collapse</xsl:text>
-                                                        <xsl:value-of select="$fragID"/>
-                                                    </xsl:attribute>                                                
-                                                    <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/>
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div>
-                                            <xsl:attribute name="id">
-                                                <xsl:text>collapse</xsl:text>
-                                                <xsl:value-of select="$fragID"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="class">collapse</xsl:attribute>
-                                            <xsl:attribute name="aria-labelledby">
-                                                <xsl:text>heading</xsl:text>
-                                                <xsl:value-of select="$fragID"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="data-parent">#accordion</xsl:attribute>   
-                                                                                        
-                                            <!-- Eigentliches Fragment bzw. der Inhalt der Card -->
-                                            
-                                            <div class="card-body">   
-                                                <table>
-                                                    <tr>
-                                                        <xsl:for-each select="facsimile/surface">
-                                                            <xsl:variable name="imgsrc">
-                                                                <xsl:value-of select="graphic/@url"/>
-                                                            </xsl:variable>
-                                                            <xsl:variable name="imgsrc">
-                                                                <xsl:value-of select="replace($imgsrc, 'file:///', '../graphic/')"/>
-                                                            </xsl:variable>
-                                                            <td>                            
-                                                                <img>
-                                                                    <xsl:attribute name="src">
-                                                                        <xsl:value-of select="$imgsrc"/>
-                                                                    </xsl:attribute>
-                                                                    <xsl:attribute name="width">100%</xsl:attribute>
-                                                                </img>                            
-                                                            </td>
-                                                        </xsl:for-each>
-                                                    </tr> 
-                                                    <tr>
-                                                        <td colspan="2">Original</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>recto</td>
-                                                        <td>verso</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <xsl:for-each select="text/body/div[contains(@type, 'original')]">
-                                                            <td>
-                                                                <xsl:apply-templates select="lg"/>
-                                                            </td>   
-                                                        </xsl:for-each>                            
-                                                    </tr> 
-                                                    <tr>
-                                                        <td colspan="2">Übersetzung</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>recto</td>
-                                                        <td>verso</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <xsl:for-each select="text/body/div[contains(@type, 'translation')]">
-                                                            <td>
-                                                                <xsl:apply-templates select="lg"/>
-                                                            </td>     
-                                                        </xsl:for-each>                            
-                                                    </tr>
-                                                </table>
-                                                <table>   
-                                                    <!-- origindate und textlang. was ist mit Rest? -->
-                                                    
-                                                    <tr>
-                                                        <td>Typ</td>
-                                                        <td><xsl:value-of select="/TEI/text/body/listBibl/msDesc/physDesc/p"/></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Sprache</td>
-                                                        <td><xsl:value-of select="teiHeader/fileDesc/sourceDesc/msDesc/msContents/textLang"/></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Ursprung</td>
-                                                        <td>
-                                                            <xsl:text>Zwischen </xsl:text>
-                                                            <xsl:value-of select="/TEI/teiHeader/fileDesc/sourceDesc/msDesc/history/origin/origDate/@notBefore"/>
-                                                            <xsl:text> und </xsl:text>
-                                                            <xsl:value-of select="/TEI/teiHeader/fileDesc/sourceDesc/msDesc/history/origin/origDate/@notAfter"/>
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                    <tr>
-                                                        <td>Responsible</td>
-                                                        <td>
-                                                            <xsl:for-each select="teiHeader/fileDesc/titleStmt/respStmt">
-                                                                <xsl:value-of select="resp"/>
-                                                                <xsl:text> </xsl:text>
-                                                                <xsl:value-of select="name"/>
-                                                                <br/>
-                                                            </xsl:for-each>                            
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Publisher</td>
-                                                        <td><xsl:value-of select="teiHeader/fileDesc/publicationStmt/publisher"/></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Publishing Place</td>
-                                                        <td><xsl:value-of select="teiHeader/fileDesc/publicationStmt/pubPlace"/></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Publishing Date</td>
-                                                        <td><xsl:value-of select="teiHeader/fileDesc/publicationStmt/date[@when]"/></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lizenz</td>
-                                                        <td>
-                                                            <xsl:value-of select="teiHeader/fileDesc/publicationStmt/availability"/>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>PID</td>
-                                                        <td>
-                                                            <xsl:value-of select="teiHeader/fileDesc/publicationStmt/idno"/>
-                                                        </td>
-                                                    </tr>                    
-                                                    
-                                                    
-                                                </table>                                        
-                                            </div>
-                                        </div>                                
-                                    </div>
+                                    <xsl:apply-templates select="files"/>                                    
+                                                                            
                                 </div>
                             </div>
                         </div>
@@ -263,12 +113,171 @@
         </html>
     </xsl:template>    
     
+    <!-- Templates -->
+    
     <xsl:template match="lg">
         <xsl:for-each select="l">
             <xsl:apply-templates/>
             <br/>
         </xsl:for-each>
         <br/>
+    </xsl:template>
+    
+    <xsl:template match="files">
+        <xsl:for-each select="file"> 
+             <xsl:variable name="fragID">
+                 <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
+             </xsl:variable>
+             <xsl:variable name="fragID">                 
+                 <xsl:value-of select="replace(replace(replace(replace($fragID, ',', ''), ' ', ''), '-', ''), '–', '')"/>
+             </xsl:variable>       
+             
+             <div class="card">
+                 <div class="card-header">
+                     <xsl:attribute name="id">
+                         <xsl:text>heading</xsl:text>
+                         <xsl:value-of select="$fragID"/>
+                     </xsl:attribute>
+                     <h5 class="mb-0">
+                         <button class="btn btn-link" data-toggle="collapse" aria-expanded="false">
+                             <xsl:attribute name="aria-controls">
+                                 <xsl:text>collapse</xsl:text>
+                                 <xsl:value-of select="$fragID"/>
+                             </xsl:attribute>
+                             <xsl:attribute name="data-target">
+                                 <xsl:text>#collapse</xsl:text>
+                                 <xsl:value-of select="$fragID"/>
+                             </xsl:attribute>                                                
+                             <xsl:apply-templates select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
+                         </button>
+                     </h5>
+                 </div>
+                 <div>
+                     <xsl:attribute name="id">
+                         <xsl:text>collapse</xsl:text>
+                         <xsl:value-of select="$fragID"/>
+                     </xsl:attribute>
+                     <xsl:attribute name="class">collapse</xsl:attribute>
+                     <xsl:attribute name="aria-labelledby">
+                         <xsl:text>heading</xsl:text>
+                         <xsl:value-of select="$fragID"/>
+                     </xsl:attribute>
+                     <xsl:attribute name="data-parent">#accordion</xsl:attribute>   
+                     
+                     <!-- Eigentliches Fragment bzw. der Inhalt der Card -->
+                     
+                     <div class="card-body">   
+                         <table>
+                             <tr>
+                                 <xsl:for-each select="document(.)/t:TEI/t:facsimile/t:surface">
+                                     
+                                     <xsl:variable name="imgsrc">
+                                         <xsl:value-of select="t:graphic/@url"/>
+                                     </xsl:variable>
+                                     <xsl:variable name="imgsrc">
+                                         <xsl:value-of select="replace($imgsrc, 'file:///', '../graphic/')"/>
+                                     </xsl:variable>
+                                     <td>                            
+                                         <img>
+                                             <xsl:attribute name="src">
+                                                 <xsl:value-of select="$imgsrc"/>
+                                             </xsl:attribute>
+                                             <xsl:attribute name="width">100%</xsl:attribute>
+                                         </img>                            
+                                     </td>
+                                 </xsl:for-each>
+                             </tr> 
+                             <tr>
+                                 <td colspan="2">Original</td>
+                             </tr>
+                             <tr>
+                                 <td>recto</td>
+                                 <td>verso</td>
+                             </tr>
+                             <tr>
+                                 <xsl:for-each select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]">
+                                     <td>
+                                         <xsl:apply-templates select="t:lg"/>
+                                     </td>   
+                                 </xsl:for-each>                            
+                             </tr> 
+                             <tr>
+                                 <td colspan="2">Übersetzung</td>
+                             </tr>
+                             <tr>
+                                 <td>recto</td>
+                                 <td>verso</td>
+                             </tr>
+                             <tr>
+                                 <xsl:for-each select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'translation')]">
+                                     <td>
+                                         <xsl:apply-templates select="t:lg"/>
+                                     </td>     
+                                 </xsl:for-each>                            
+                             </tr>
+                         </table>
+                         <table>   
+                             <!-- origindate und textlang. was ist mit Rest? -->
+                             
+                             <tr>
+                                 <td>Typ</td>
+                                 <td><xsl:value-of select="document(.)/t:TEI/t:text/t:body/t:listBibl/t:msDesc/t:physDesc/t:p"/></td>
+                             </tr>
+                             <tr>
+                                 <td>Sprache</td>
+                                 <td><xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:textLang"/></td>
+                             </tr>
+                             <tr>
+                                 <td>Ursprung</td>
+                                 <td>
+                                     <xsl:text>Zwischen </xsl:text>
+                                     <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:origDate/@notBefore"/>
+                                     <xsl:text> und </xsl:text>
+                                     <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:origDate/@notAfter"/>
+                                 </td>
+                             </tr>
+                             
+                             <tr>
+                                 <td>Responsible</td>
+                                 <td>
+                                     <xsl:for-each select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt">
+                                         <xsl:value-of select="t:resp"/>
+                                         <xsl:text> </xsl:text>
+                                         <xsl:value-of select="t:name"/>
+                                         <br/>
+                                     </xsl:for-each>                            
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>Publisher</td>
+                                 <td><xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:publisher"/></td>
+                             </tr>
+                             <tr>
+                                 <td>Publishing Place</td>
+                                 <td><xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:pubPlace"/></td>
+                             </tr>
+                             <tr>
+                                 <td>Publishing Date</td>
+                                 <td><xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:date[@when]"/></td>
+                             </tr>
+                             <tr>
+                                 <td>Lizenz</td>
+                                 <td>
+                                     <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:availability"/>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>PID</td>
+                                 <td>
+                                     <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno"/>
+                                 </td>
+                             </tr>                 
+                             
+                         </table>                                        
+                     </div>
+                 </div>                                
+             </div>
+        </xsl:for-each>
     </xsl:template>
     
 </xsl:stylesheet>

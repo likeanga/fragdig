@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
@@ -10,16 +9,16 @@
         <html>
             <head>
                 <title>
-                    <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/>
                     <xsl:text>Fragmente Digital</xsl:text>
                 </title>
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
                 <link rel="stylesheet" type="text/css" href="../css/mdb.min.css" />
-                <script src="https://code.jquery.com/jquery-1.12.4.js"> </script>
-                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"> </script>
-                <script src="../js/mdb.min.js"> </script>
+                <script src="https://code.jquery.com/jquery-1.12.4.js"><xsl:text> </xsl:text></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"><xsl:text> </xsl:text></script>
+                <script src="../js/mdb.min.js"><xsl:text> </xsl:text></script>
+                <!-- xsl:text mit Leerzeichen ist bei all den Scripts notwendig, da die Seite ansonsten nicht funktioniert. Gott weiß, warum -->
             </head>
             <body>
                 <div class="container-fluid fixed-top">
@@ -70,23 +69,35 @@
                         <div class="col-sm-12 p-0">
                             <div class="container yellow lighten-4 border z-depth-1 rounded">
                                 <p style="font-size:100px">Fragmente</p>
+                                
+                                <!-- Akkordion -->     
+                                
                                 <div id="accordion">
-                                    <xsl:variable name="fragID"><xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/></xsl:variable>
+                                                                        
+                                    <!-- Hier überlegen, wie alle Dokumente einfügen. Dann wohl for-each document oder so eine card einfügen -->    
+                                    
+                                    <xsl:variable name="fragID">
+                                        <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/>
+                                    </xsl:variable>
+                                    <xsl:variable name="fragID">
+                                        <xsl:value-of select="replace(replace(replace(replace($fragID, ',', ''), ' ', ''), '–', ''), '.', '')"/>
+                                    </xsl:variable>
+                                    
                                     <div class="card">
                                         <div class="card-header">
                                             <xsl:attribute name="id">
-                                                <xsl:text>collapse</xsl:text>
-                                                <xsl:value-of select="replace($fragID, ' ', '')"/>
+                                                <xsl:text>heading</xsl:text>
+                                                <xsl:value-of select="$fragID"/>
                                             </xsl:attribute>
                                             <h5 class="mb-0">
                                                 <button class="btn btn-link" data-toggle="collapse" aria-expanded="false">
                                                     <xsl:attribute name="aria-controls">
                                                         <xsl:text>collapse</xsl:text>
-                                                        <xsl:value-of select="replace($fragID, ' ', '')"/>
+                                                        <xsl:value-of select="$fragID"/>
                                                     </xsl:attribute>
                                                     <xsl:attribute name="data-target">
                                                         <xsl:text>#collapse</xsl:text>
-                                                        <xsl:value-of select="replace($fragID, ' ', '')"/>
+                                                        <xsl:value-of select="$fragID"/>
                                                     </xsl:attribute>                                                
                                                     <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/>
                                                 </button>
@@ -95,32 +106,43 @@
                                         <div>
                                             <xsl:attribute name="id">
                                                 <xsl:text>collapse</xsl:text>
-                                                <xsl:value-of select="replace($fragID, ' ', '')"/>
+                                                <xsl:value-of select="$fragID"/>
                                             </xsl:attribute>
                                             <xsl:attribute name="class">collapse</xsl:attribute>
                                             <xsl:attribute name="aria-labelledby">
                                                 <xsl:text>heading</xsl:text>
-                                                <xsl:value-of select="replace($fragID, ' ', '')"/>
+                                                <xsl:value-of select="$fragID"/>
                                             </xsl:attribute>
-                                            <xsl:attribute name="data-parent">#accordion</xsl:attribute>                        
-                                            <div class="card-body">
-                                                
-                                                <!-- Eigentliches Fragment -->
-                                                
+                                            <xsl:attribute name="data-parent">#accordion</xsl:attribute>   
+                                                                                        
+                                            <!-- Eigentliches Fragment bzw. der Inhalt der Card -->
+                                            
+                                            <div class="card-body">   
                                                 <table>
                                                     <tr>
                                                         <xsl:for-each select="facsimile/surface">
+                                                            <xsl:variable name="imgsrc">
+                                                                <xsl:value-of select="graphic/@url"/>
+                                                            </xsl:variable>
+                                                            <xsl:variable name="imgsrc">
+                                                                <xsl:value-of select="replace($imgsrc, 'file:///', '../graphic/')"/>
+                                                            </xsl:variable>
                                                             <td>                            
                                                                 <img>
                                                                     <xsl:attribute name="src">
-                                                                        <xsl:value-of select="graphic/@url"/> <!-- {replace ('file:///', 'file:///', '..\graphic\'} -->
+                                                                        <xsl:value-of select="$imgsrc"/>
                                                                     </xsl:attribute>
+                                                                    <xsl:attribute name="width">100%</xsl:attribute>
                                                                 </img>                            
                                                             </td>
                                                         </xsl:for-each>
                                                     </tr> 
                                                     <tr>
                                                         <td colspan="2">Original</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>recto</td>
+                                                        <td>verso</td>
                                                     </tr>
                                                     <tr>
                                                         <xsl:for-each select="text/body/div[contains(@type, 'original')]">
@@ -131,6 +153,10 @@
                                                     </tr> 
                                                     <tr>
                                                         <td colspan="2">Übersetzung</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>recto</td>
+                                                        <td>verso</td>
                                                     </tr>
                                                     <tr>
                                                         <xsl:for-each select="text/body/div[contains(@type, 'translation')]">
@@ -145,7 +171,7 @@
                                                     
                                                     <tr>
                                                         <td>Typ</td>
-                                                        <td><xsl:value-of select="/TEI/text/body/listBibl/msDesc/physDesc/p"/></td>
+                                                        <td><xsl:value-of select="TEI/text/body/listBibl/msDesc/physDesc/p"/></td>
                                                     </tr>
                                                     <tr>
                                                         <td>Sprache</td>
@@ -155,16 +181,14 @@
                                                         <td>Ursprung</td>
                                                         <td>
                                                             <xsl:text>Zwischen </xsl:text>
-                                                            <xsl:value-of select="/TEI/teiHeader/fileDesc/sourceDesc/msDesc/history/origin/origDate/@notBefore"/>
+                                                            <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/msDesc/history/origin/origDate/@notBefore"/>
                                                             <xsl:text> und </xsl:text>
-                                                            <xsl:value-of select="/TEI/teiHeader/fileDesc/sourceDesc/msDesc/history/origin/origDate/@notAfter"/>
+                                                            <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/msDesc/history/origin/origDate/@notAfter"/>
                                                         </td>
                                                     </tr>
                                                     
-                                                    
-                                                    
                                                     <tr>
-                                                        <td valign="top">Responsible</td>
+                                                        <td>Responsible</td>
                                                         <td>
                                                             <xsl:for-each select="teiHeader/fileDesc/titleStmt/respStmt">
                                                                 <xsl:value-of select="resp"/>
@@ -187,7 +211,7 @@
                                                         <td><xsl:value-of select="teiHeader/fileDesc/publicationStmt/date[@when]"/></td>
                                                     </tr>
                                                     <tr>
-                                                        <td valign="top">Lizenz</td>
+                                                        <td>Lizenz</td>
                                                         <td>
                                                             <xsl:value-of select="teiHeader/fileDesc/publicationStmt/availability"/>
                                                         </td>
@@ -201,12 +225,15 @@
                                                     
                                                     
                                                 </table>                                        
+                                            </div>
+                                        </div>                                
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <footer class="page-footer yellow text-dark z-depth-1 rounded">
                     <div class="container">
                         <div class="row">
@@ -229,9 +256,10 @@
                         </div>
                     </div>
                 </footer>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"> </script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"> </script>
-            </body>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"><xsl:text> </xsl:text></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"><xsl:text> </xsl:text></script>
+                
+                </body>
         </html>
     </xsl:template>    
     
@@ -240,6 +268,7 @@
             <xsl:apply-templates/>
             <br/>
         </xsl:for-each>
+        <br/>
     </xsl:template>
     
 </xsl:stylesheet>
