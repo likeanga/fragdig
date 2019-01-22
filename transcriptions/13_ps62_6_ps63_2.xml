@@ -105,6 +105,12 @@
 
                 </lg>
             </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
         </body>
     </text>
 </TEI>

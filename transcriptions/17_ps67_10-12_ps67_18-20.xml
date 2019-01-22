@@ -110,6 +110,12 @@
                     <l><m ana="67,20"/>Benedictus Dominus die cottidie</l>
                 </lg>
             </div>
+            <div type="translation" xml:lang="de">
+                <lg>
+                    <l corresp="#L1"/>
+                    <l corresp="#L2"/>
+                </lg>
+            </div>
         </body>
     </text>
 </TEI>
