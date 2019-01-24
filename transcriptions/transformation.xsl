@@ -191,10 +191,12 @@
                              <div class="row">
                                  <div class="col"><b>Original</b></div>
                              </div>
-                             <div class="row">
-                                 <div class="col"><i>recto</i></div>
-                                 <div class="col"><i>verso</i></div>
-                             </div>
+                             <xsl:if test="count(document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]) &gt; 1">
+                                <div class="row">
+                                     <div class="col"><i>recto</i></div>
+                                     <div class="col"><i>verso</i></div>                                 
+                                </div>
+                             </xsl:if>
                              <div class="row">
                                  <xsl:for-each select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]">
                                      <div class="col">
@@ -205,18 +207,28 @@
                                      </div>   
                                  </xsl:for-each>                            
                              </div> 
-                         <br/>
+                             <br/>
                              <div class="row">
-                                 <div class="col-sm-4"><b>Übersetzung</b></div>
-                                 <div class="col-sm-8"><a href="https://www.bibleserver.com">Schau selber nach :)</a></div>
+                                <div class="col"><b>Übersetzung</b></div>
                              </div>
+                             <xsl:if test="count(document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]) &gt; 1">
+                                <div class="row">
+                                    <div class="col"><i>recto</i></div>
+                                    <div class="col"><i>verso</i></div>                                 
+                                </div>
+                             </xsl:if>
                              <div class="row">
+                                 <!-- TODO: Hier muss im XML noch die Adresse angegeben werden -->
                                  <xsl:for-each select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'translation')]">
-                                     <td>
-                                         <xsl:apply-templates select="t:lg"/>
-                                     </td>     
-                                 </xsl:for-each>                            
-                             </div>  
+                                     <div class="col">
+                                         <xsl:for-each select="t:lg/t:l">
+                                             <a href="https://www.bibleserver.com"><img src="..\html\icons\deutsch.jpg"/></a>
+                                             <xsl:text>   </xsl:text>
+                                             <a href="https://www.bibleserver.com"><img src="..\html\icons\englisch.jpg"/></a>
+                                         </xsl:for-each>
+                                     </div>   
+                                 </xsl:for-each> 
+                             </div>
                              <!-- origindate und textlang. was ist mit Rest? -->
                              <br/><br/>
                              <div class="row">
@@ -245,4 +257,8 @@
         </xsl:for-each>
     </xsl:template>
     
+    <xsl:template match="t:l">
+       
+        <xsl:apply-templates/>
+    </xsl:template>
 </xsl:stylesheet>
