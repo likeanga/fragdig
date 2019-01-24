@@ -100,8 +100,8 @@
             <pb type="folio" facs="#img.fol.8r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="15,8"/>abyssi in medio mari.</l>
-                    <l><m ana="15,9"/>Dixit inimicus, persequar et comprehendam,</l>
+                    <l><milestone ana="15,8"/>abyssi in medio mari.</l>
+                    <l><milestone ana="15,9"/>Dixit inimicus, persequar et comprehendam,</l>
                     <l>dividam spolia, implebitur anima mea</l>
                 </lg>
             </div>
@@ -115,7 +115,7 @@
             <!-- verso -->
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="15,5"/>Tunc conturbati sunt principes Edom,</l>
+                    <l><milestone ana="15,5"/>Tunc conturbati sunt principes Edom,</l>
                     <l>robustos Moab obtinuit tremor, ob</l>
                     <l>riguerunt omnes habitatores Chanaan.</l>
 

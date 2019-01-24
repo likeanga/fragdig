@@ -102,9 +102,9 @@
             <pb type="folio" facs="#img.fol.7r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="148,7"/>Laudate Dominum de terra, dracones et om</l>
+                    <l><milestone ana="148,7"/>Laudate Dominum de terra, dracones et om</l>
                     <l>nes abyssi.</l>
-                    <l><m ana="148,8"/>Ignis, grando, nix, glacies, spiritus procella</l>
+                    <l><milestone ana="148,8"/>Ignis, grando, nix, glacies, spiritus procella</l>
                     <l>rum quae faciunt verbum eius.</l>
                 </lg>
             </div>
@@ -119,10 +119,10 @@
             <pb type="folio" facs="#img.fol.7v"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="149,2"/>et filii Sion exultent in rege suo.</l>
-                    <l><m ana="149,3"/>Laudent nomen eius in choro, in tympa</l>
+                    <l><milestone ana="149,2"/>et filii Sion exultent in rege suo.</l>
+                    <l><milestone ana="149,3"/>Laudent nomen eius in choro, in tympa</l>
                     <l>no et psalterio psallant ei.</l>
-                    <l><m ana="149,4"/>Quia bene placitum est Domino in popu[lo suo]</l>
+                    <l><milestone ana="149,4"/>Quia bene placitum est Domino in popu[lo suo]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
