@@ -1,11 +1,9 @@
-
-2) milestone-elemente zulassen
+﻿
 3) im xsl automatisch die url generieren
 4) Referenzfiles als liste machen
 5) erlauben in l "n" attribut
-6) Abreviaturen und so Zeug - wie? Dachte mit Checkbox
+6) Abbreviaturen und so Zeug - wie? Dachte mit Checkbox
 7) Auf dem Fragment ist weniger Text als im TEI. Wie auszeichnen?
-8) Seite Dokumentation: Überschrift steht drüber hinaus. Formatierung vlt überdenken, weil dort ja kein Karussell
 10) Logo einbauen
 
 Anm.: in Fragment 15 sind Rubrizierungen, die wären vielleicht interessant zu annotieren
@@ -16,3 +14,5 @@ Erledigt:
 
 9) Bei ein paar TEI scheinen die Pfade für die Bilder nicht zu stimmen, da die dann auf der Fragmente-SEite nicht angezeigt werden.
 1) info bzgl. psalm auch im xml auszeichnen
+8) Seite Dokumentation: Überschrift steht drüber hinaus. Formatierung vlt überdenken, weil dort ja kein Karussell
+2) milestone-elemente zulassen
