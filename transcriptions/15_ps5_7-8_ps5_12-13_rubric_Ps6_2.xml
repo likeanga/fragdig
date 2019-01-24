@@ -59,11 +59,11 @@
     <facsimile>
         <!-- Faksimile einbinden -->
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///15r.jpg" xml:id="img.fol.15r"/>
+            <graphic mimeType="image/jpeg" url="file:///15r.png" xml:id="img.fol.15r"/>
             <zone/>
         </surface>
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///15v.jpg" xml:id="img.fol.15v"/>
+            <graphic mimeType="image/jpeg" url="file:///15v.png" xml:id="img.fol.15v"/>
             <zone/>
         </surface>
     </facsimile>
