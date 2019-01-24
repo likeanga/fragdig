@@ -21,7 +21,7 @@
         <moduleRef key="core" include="title author respStmt resp pubPlace date p title author respStmt resp name publisher ref textLang graphic listBibl pb head lg l choice abbr expan add"/>
         <moduleRef key="tei"/>
         <moduleRef key="textstructure" include="TEI text body div"/>
-        <moduleRef key="msdescription" include="msDesc msIdentifier repository msContents msItem history origin origDate origPlace msName physDesc objectDesc supportDesc support extent measure"></moduleRef>
+        <moduleRef key="msdescription" include="msDesc msIdentifier repository msContents msItem history origin origDate origPlace msName physDesc objectDesc supportDesc support extent measure dimensions"></moduleRef>
         <moduleRef key="namesdates" include="settlement"/>
         <moduleRef key="transcr" include="facsimile surface zone"></moduleRef>
         <moduleRef key="gaiji" include="g"></moduleRef>
