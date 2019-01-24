@@ -1399,7 +1399,7 @@
           <attDef ident="resp" mode="delete"/>
           <attDef ident="source" mode="delete"/>
           <attDef ident="extent" mode="change"/>
-          <attDef ident="material" mode="change" usage="rec" select="perg"/>
+          <attDef ident="material" mode="change" usage="req" select="paper parch mixed"/>
         </attList>
       </elementSpec>
       
