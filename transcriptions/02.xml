@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>PS 52,6–7 und 53,7-9</title>
+                <title>PS 58,6–7 und 58,13-14</title>
                 <author>Unknown</author>
                 <respStmt>
                     <resp>Originally prepared by</resp>
@@ -47,8 +47,19 @@
                         </msItem>
                     </msContents>
                     <physDesc>
-                        <p>Pergamentfragment</p>
-                        <p></p>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>Parchment</support>
+                                <extent>
+                                    <dimensions>
+                                        <!-- Ps 58,6-7 / Ps 58,13-14: 18,6 x 6,2 cm -->
+                                        <height></height>
+                                        <width></width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <!--  <p>Pergamentfragment</p> -->
                     </physDesc>
                     <history>
                         <origin>
@@ -63,18 +74,16 @@
     <facsimile>
         <!-- Faksimile einbinden -->
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///1r.jpg" xml:id="img.fol.1r"/>
+            <graphic mimeType="image/jpeg" url="file:///2r.jpg" xml:id="img.fol.2r"/>
             <zone/>
         </surface>
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///1v.jpg" xml:id="img.fol.1v"/>
+            <graphic mimeType="image/jpeg" url="file:///2v.jpg" xml:id="img.fol.2v"/>
             <zone/>
         </surface>
     </facsimile>
     <text>
         <body>
-<<<<<<< HEAD
-=======
             <listBibl>
                 <msDesc>
                     <!-- noch mehr Elemente -->
@@ -84,56 +93,22 @@
                         <msName xml:lang="la"/>
                     </msIdentifier>
                     <physDesc>
-                        <objectDesc>
-                            <supportDesc>
-                                <support>Parchment</support>
-                                <extent>
-                                    <dimensions>
-                                        <heigt></heigt>
-                                        <width></width>
-                                    </dimensions>
-                                </extent>
-                            </supportDesc>
-                        </objectDesc>
-                        <!--  <p>Pergamentfragment</p> -->
+                        <p>Pergamentfragment</p>
                     </physDesc>
                 </msDesc>
             </listBibl>
-            
-            <!--  
-                <physDesc>
-            <objectDesc form="codex">
-                <supportDesc material="perg"> ah: unbedingt rein
-                    <support>
-                        <p>Parchment.</p>
-                    </support>
-                    <extent>i + 55 leaves <dimensions scope="all" type="leaf"
-                        unit="inch">
-                        <height>7¼</height>
-                        <width>5⅜</width>
-                    </dimensions>
-                    </extent>
-                </supportDesc>
-            -->
-            
->>>>>>> c8e3f5258d3e36376828e8616d22fd085a6f5123
+
             <!-- recto -->
-            <pb type="folio" facs="#img.fol.1r"/>
+            <pb type="folio" facs="#img.fol.2r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l xml:id="L1"><choice>
-                            <abbr>Qm</abbr>
-                            <expan>Quoniam</expan>
-                        </choice>
-                        <choice>
-                            <abbr>ds</abbr>
-                            <expan>Deus</expan>
-                        </choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="#ER"
-                            place="above">52.6.</add></l>
-                    <l xml:id="L2">nibus placent: confusi sunt</l>
-                    <l xml:id="L3">quoniam Deus sprevit eos.</l>
-                    <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
-                    <l xml:id="L5">cum convertit Deus captivita[tem]</l>
+                    <!-- Problem: Text auf Fragmentbild beginnt erst bei intende -->
+                    <l><m ana="58,6"/>[Et tu Domine Deus] virtutum, Deus Israel. Intende ad
+                        visitandas omnes gentes,</l>
+                    <l>non miserearis omnibus qui ope</l>
+                    <l>rantur iniquitatem.</l>
+                    <l><m ana="58,7"/>Convertentur ad vesperam et fa</l>
+                    <l>men patientur ut canes et circu[ibunt civitatem]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -144,13 +119,16 @@
             </div>
 
             <!-- verso -->
-            <pb type="folio" facs="#img.fol.1v"/>
+            <pb type="folio" facs="#img.fol.2v"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>53,7: Averte mala inimicis meis: in veritate tua disperde illos.</l>
-                    <l>53,8: Voluntarie sacrifibo tibi, et confitebor nomini tuo quoniam bonum
-                        est.</l>
-                    <l> 53,9: Quoniam ex omni tribulatione eripuisti [me]</l>
+                    <!-- erste Zeile nicht auf Bild! -->
+                    <l><m ana="58,13"/>Delictum oris eorum sermonem labiorum </l>
+                    <l>ipsorum: et comprehendant in superbia sua.</l>
+                    <l>Et de execratione et mendatio an</l>
+                    <l>nuntiabuntur <m ana="58,14"/>in consumatione,</l>
+                    <l>in ira consumationis et non erunt.</l>
+                    <l>Et scient quia Deus dominabitur [Iacob].</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
