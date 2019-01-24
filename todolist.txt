@@ -1,7 +1,14 @@
-1) info bzgl. psalm auch im xml auszeichnen
+﻿1) info bzgl. psalm auch im xml auszeichnen
 2) milestone-elemente zulassen
 3) im xsl automatisch die url generieren
 4) Referenzfiles als liste machen
 5) erlauben in l "n" attribut
 
 Anm.: in Fragment 15 sind Rubrizierungen, die wären vielleicht interessant zu annotieren
+
+
+
+Abreviaturen und so scheißdreck - wie?
+Auf dem Fragment ist weniger Text als im TEI. Wie auszeichnen?
+Seite Dokumentation: Überschrift steht drüber hinaus. Formatierung vlt überdenken, weil dort ja kein Karussell
+Bei ein paar TEI scheinen die Pfade für die Bilder nicht zu stimmen, da die dann auf der Fragmente-SEite nicht angezeigt werden.
