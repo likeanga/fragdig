@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2019-01-24T10:01:57Z. .
+Schema generated from ODD source 2019-01-24T14:31:10Z. .
 TEI Edition: Version 3.2.0. Last updated on
 	10th July 2017, revision 0fcf651
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.2.0/
@@ -2083,6 +2083,9 @@ Elements]</a:documentation>
          <group>
             <group>
                <ref name="titleStmt"/>
+               <optional>
+                  <ref name="extent"/>
+               </optional>
                <ref name="publicationStmt"/>
             </group>
             <oneOrMore>
@@ -2102,6 +2105,12 @@ Elements]</a:documentation>
                <ref name="model.respLike"/>
             </zeroOrMore>
          </group>
+      </element>
+   </define>
+   <define name="extent">
+      <element name="extent">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the approximate size of a text stored on some carrier medium or of some other object, digital or non-digital, specified in any convenient units. [2.2.3. Type and Extent of File 2.2. The File Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 10.7.1. Object Description]</a:documentation>
+         <ref name="macro.phraseSeq"/>
       </element>
    </define>
    <define name="publicationStmt">
@@ -2762,6 +2771,9 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
             <group>
                <optional>
                   <ref name="support"/>
+               </optional>
+               <optional>
+                  <ref name="extent"/>
                </optional>
             </group>
          </choice>
