@@ -46,6 +46,21 @@
                             <title/>
                         </msItem>
                     </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>Parchment</support>
+                                <extent>
+                                    <dimensions>
+                                        <!-- Ps 5,7-8 / Ps 5,12-13: 19,0 x 7,5 cm (schräg abgeschnitten) -->
+                                        <height></height>
+                                        <width></width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <!--  <p>Pergamentfragment</p> -->
+                    </physDesc>
                     <history>
                         <origin>
                             <origDate notBefore="0800" notAfter="1600"/>

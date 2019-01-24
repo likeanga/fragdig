@@ -46,6 +46,21 @@
                             <title/>
                         </msItem>
                     </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>Parchment</support>
+                                <extent>
+                                    <dimensions>
+                                        <!-- Ps 106,25-26 / Ps 106,35-36: 19,6 x 5,0 cm cm -->
+                                        <height></height>
+                                        <width></width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <!--  <p>Pergamentfragment</p> -->
+                    </physDesc>
                     <history>
                         <origin>
                             <origDate notBefore="0800" notAfter="1600"/>
