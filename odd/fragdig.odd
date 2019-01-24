@@ -17,11 +17,11 @@
   <text>
     <body>
       <schemaSpec ident="oddex1" start="TEI">
-        <moduleRef key="header" include="availability teiHeader fileDesc publicationStmt idno fileDesc titleStmt publicationStmt availability sourceDesc"/>
+        <moduleRef key="header" include="availability teiHeader fileDesc publicationStmt idno fileDesc titleStmt publicationStmt availability sourceDesc extent"/>
         <moduleRef key="core" include="title author respStmt resp pubPlace date p title author respStmt resp name publisher ref textLang graphic listBibl pb head lg l choice abbr expan add"/>
         <moduleRef key="tei"/>
         <moduleRef key="textstructure" include="TEI text body div"/>
-        <moduleRef key="msdescription" include="msDesc msIdentifier repository msContents msItem history origin origDate origPlace msName physDesc objectDesc supportDesc support extent measure dimensions"></moduleRef>
+        <moduleRef key="msdescription" include="msDesc msIdentifier repository msContents msItem history origin origDate origPlace msName physDesc objectDesc supportDesc support measure dimensions"></moduleRef>
         <moduleRef key="namesdates" include="settlement"/>
         <moduleRef key="transcr" include="facsimile surface zone"></moduleRef>
         <moduleRef key="gaiji" include="g"></moduleRef>
@@ -1398,6 +1398,7 @@
           <attDef ident="cert" mode="delete"/>
           <attDef ident="resp" mode="delete"/>
           <attDef ident="source" mode="delete"/>
+          <attDef ident="extent" mode="change"/>
           <attDef ident="material" mode="change" usage="rec" select="perg"/>
         </attList>
       </elementSpec>
@@ -1775,7 +1776,7 @@
         </attList>
       </elementSpec>
       
-      <elementSpec ident="extent" module="msdescription" mode="change">
+      <elementSpec ident="extent" module="header" mode="change">
         <attList>
           <attDef ident="xml:id" mode="delete"/>
           <attDef ident="n" mode="delete"/> 
