@@ -81,24 +81,21 @@
             </listBibl>
             <pb type="folio" facs="#img.fol.9r"/>
             <div type="original" xml:lang="la">
-                <lg>
-                    <l>GREGORIUS I, Homiliae in Evangelia, 76, 1289B (auctor 540-604)
-                        (PL 76 1289B) HOMILIA XXXVIII
-                        
-                        [Diligite]
-                        inimicos vestros, benefacite [his qui oderunt vos (Luc. VI, 27).]
-                        Ille ergo securus amat, qui propter [Deum illum am]
-                        at a quo se intelligit non [amari. Magna sunt haec,]
-                        alta sunt haec, et multis ad ex[hibendum difficilia, sed]
-                        tamen ista est vestis nuptialis. [Quisquis autem hanc recum]
-                        bens in nuptiis non habet, iam [sollicitus metuat, in]
-                        grediente rege, quando mit[tatur foras. Ecce enim dicitur:]
-                        Intravit rex ad nuptias [ut videret discum]
-                        bentes, et vidit ibi hominem non [vestitum veste nupt]
-                        iali. Nos sumus, fratres charissimi, [qui in nuptiis Verbi discumb]
-                        imus, qui iam fidem in Ecc[lesia habemus, qui]
-                        sacrae epulis pascimur, qui [coniunctam Deo Ecclesiam]
-                        esse gaudemus. (1289C) [Considerate, rogo, …]</l>
+                <lg>              
+                        <l>[Diligite]</l>
+                        <l>inimicos vestros, benefacite [his qui oderunt vos (Luc. VI, 27).]</l>
+                        <l>Ille ergo securus amat, qui propter [Deum illum am]</l>
+                        <l>at a quo se intelligit non [amari. Magna sunt haec,]</l>
+                        <l>alta sunt haec, et multis ad ex[hibendum difficilia, sed]</l>
+                        <l>tamen ista est vestis nuptialis. [Quisquis autem hanc recum]</l>
+                        <l>bens in nuptiis non habet, iam [sollicitus metuat, in]</l>
+                        <l>grediente rege, quando mit[tatur foras. Ecce enim dicitur:]</l>
+                        <l>Intravit rex ad nuptias [ut videret discum]</l>
+                        <l>bentes, et vidit ibi hominem non [vestitum veste nupt]</l>
+                        <l>iali. Nos sumus, fratres charissimi, [qui in nuptiis Verbi discumb]</l>
+                        <l>imus, qui iam fidem in Ecc[lesia habemus, qui]</l>
+                        <l>sacrae epulis pascimur, qui [coniunctam Deo Ecclesiam]</l>
+                        <l>esse gaudemus. (1289C) [Considerate, rogo, …]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">

@@ -81,18 +81,14 @@
             </listBibl>
             <pb type="folio" facs="#img.fol.12r"/>
             <div type="original" xml:lang="la">
-                <lg>
-                    <l>
-                        AUGUSTINUS HIPPONENSIS, De sermone Domini in monte, 1, 25
-                        (PL 34 1241) 25
-                        
-                        [In secunda vero cum ait, Qui autem dixerit fratri suo, Racha, sub]
-                        auditor sine causa et ita [iungitur, reus]
-                        erit consilio. Iam in tertia [ubi ait, Qui autem]
-                        dixerit fatue, duo subaudiuntur et fr[atri suo]
-                        et sine causa. Hoc est unde defenditur, quod
-                        apostolus galathas vocat stultos [Gal 3,1] quod etiam fratres 
-                    </l>
+                <lg>                        
+                        <l>[In secunda vero cum ait, Qui autem dixerit fratri suo, Racha, sub]</l>
+                        <l>auditor sine causa et ita [iungitur, reus]</l>
+                        <l>erit consilio. Iam in tertia [ubi ait, Qui autem]</l>
+                        <l>dixerit fatue, duo subaudiuntur et fr[atri suo]</l>
+                        <l>et sine causa. Hoc est unde defenditur, quod</l>
+                        <l>apostolus galathas vocat stultos [Gal 3,1] quod etiam fratres </l>
+                    
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
