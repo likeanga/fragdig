@@ -231,7 +231,7 @@
                             <xsl:for-each
                                 select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]">
                                 <div class="col">
-                                    <xsl:apply-templates select="t:m"/>
+                                    <xsl:apply-templates select="t:milestone"/>
                                     <xsl:apply-templates select="t:expan"/>
                                     <xsl:apply-templates select="t:abbr"/>
                                     <xsl:apply-templates select="t:lg/t:l"/>  
@@ -319,7 +319,7 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template match="t:m">
+    <xsl:template match="t:milestone">
         <i><xsl:text>[</xsl:text>
         <xsl:value-of select="@ana"/>
         <xsl:text>] </xsl:text></i>
