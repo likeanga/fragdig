@@ -14,6 +14,8 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
                 <link rel="stylesheet" type="text/css" href="../css/mdb.min.css"/>
+                <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet"/>
+                <link rel="stylesheet" type="text/css" href="../css/fragdig.css" />
                 <script src="https://code.jquery.com/jquery-1.12.4.js"><xsl:text> </xsl:text></script>
                 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"><xsl:text> </xsl:text></script>
                 <script src="../js/mdb.min.js"><xsl:text> </xsl:text></script>
