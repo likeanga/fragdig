@@ -72,7 +72,7 @@
                     <div class="row pt-4 pb-5 justify-content-around">
                         <div class="col-sm-12 p-0">
                             <div class="container yellow lighten-4 border z-depth-1 rounded">
-                                <p style="font-size:100px">Fragmente</p>
+                                <p style="font-size:70px">Fragmente</p>
 
                                 <!-- Akkordion -->
 

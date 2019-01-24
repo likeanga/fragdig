@@ -46,6 +46,10 @@
                             <title/>
                         </msItem>
                     </msContents>
+                    <physDesc>
+                        <p>Pergamentfragment</p>
+                        <p></p>
+                    </physDesc>
                     <history>
                         <origin>
                             <origDate notBefore="0800" notAfter="1600"/>
@@ -69,20 +73,6 @@
     </facsimile>
     <text>
         <body>
-            <listBibl>
-                <msDesc>
-                    <!-- noch mehr Elemente -->
-                    <msIdentifier>
-                        <settlement>Graz</settlement>
-                        <repository>GAMS</repository>
-                        <msName xml:lang="la"/>
-                    </msIdentifier>
-                    <physDesc>
-                        <p>Pergamentfragment</p>
-                    </physDesc>
-                </msDesc>
-            </listBibl>
-            
             <!-- recto -->
             <pb type="folio" facs="#img.fol.1r"/>
             <div type="original" xml:lang="la">
@@ -108,7 +98,7 @@
                     <l corresp="#L2"/>
                 </lg>
             </div>
-            
+
             <!-- verso -->
             <pb type="folio" facs="#img.fol.1v"/>
             <div type="original" xml:lang="la">
