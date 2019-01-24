@@ -17,12 +17,29 @@
                 <script src="https://code.jquery.com/jquery-1.12.4.js"><xsl:text> </xsl:text></script>
                 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"><xsl:text> </xsl:text></script>
                 <script src="../js/mdb.min.js"><xsl:text> </xsl:text></script>
+                <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+                    $(document).ready(function() {
+                         $(("#box1").click(function(){
+                                                  
+                             if ($("#box1").prop('checked', true))
+                             {
+                                 $(".expan").show();
+                                 $(".abbr").hide();    
+                             }
+                             if ($("#box1").prop('checked', false))
+                             {
+                                 $(".expan").hide();
+                                 $(".abbr").show();    
+                             }  
+                         })
+                    }
+                </script>-->
                 <!-- xsl:text mit Leerzeichen ist bei all den Scripts notwendig, da die Seite ansonsten nicht funktioniert. Gott weiß, warum -->
             </head>
             <body>
                 <div class="container-fluid fixed-top">
-                    <div class="row p-0 yellow darken-3 rounded">
-                        <h1>Fragmente Digital</h1>
+                    <div class="row pt-3 pb-3 yellow darken-3 rounded">
+                        <h1 class="pl-3">Fragmente Digital</h1>
                     </div>
                     <div class="row p-0 yellow rounded">
                         <div class="col-sm-12 p-0">
@@ -30,35 +47,33 @@
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#main_navbar_top" aria-controls="main_navbar_top"
                                     aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"/>
+                                    <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="main_navbar_top">
                                     <ul class="navbar-nav mr-auto">
                                         <li class="nav-item">
-                                            <a class="nav-link rounded" href="../index.html"
-                                                >Home</a>
+                                            <a class="nav-link rounded" href="../index.html">Home</a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle rounded"
-                                                id="navbarDropdown" role="button"
-                                                data-toggle="dropdown" aria-haspopup="true"
+                                            <a class="nav-link dropdown-toggle rounded" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false">About</a>
                                             <div class="dropdown-menu yellow lighten-4"
                                                 aria-labelledby="navbarDropdown">
                                                 <a class="dropdown-item rounded" href="projekt.html"
-                                                  >Projekt</a>
-                                                <a class="dropdown-item rounded"
-                                                  href="dokumentation.html">Dokumentation</a>
+                                                    >Projekt</a>
+                                                <a class="dropdown-item rounded" href="dokumentation.html"
+                                                    >Dokumentation</a>
                                             </div>
                                         </li>
-                                       
                                         <li class="nav-item active">
-                                            <a class="nav-link rounded" href="fragmente.html"
-                                                >Fragmente</a>
+                                            <a class="nav-link rounded" href="fragmente.html">Fragmente</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link rounded" href="viewer.html"
-                                                >Viewer</a>
+                                            <a class="nav-link rounded" href="viewer.html">Viewer</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link rounded" href="download.html">Downloads</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -66,14 +81,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid p-5 m-2"/>
+                <div class="container-fluid p-5 m-4"/>
                 <!-- Ein leerer Container der leider für Anständiges Spacing nötig ist. Er nimmt denselben Platz ein wie der Container für Überschrift h1 und Navbar, welcher fixed-top ist -->
                 <div class="container-fluid p-0">
                     <div class="row pt-4 pb-5 justify-content-around">
                         <div class="col-sm-12 p-0">
                             <div class="container yellow lighten-4 border z-depth-1 rounded">
-                                <p style="font-size:70px">Fragmente</p>
-
+                                <h2 class="pt-3 pb-2"><u>Fragmente</u></h2>
+                                <!--<input type="checkbox" name="checkbox" id="box1">Abkürzungen aufschlüsseln</input>-->
                                 <!-- Akkordion -->
 
                                 <div id="accordion">
@@ -87,22 +102,17 @@
                     </div>
                 </div>
 
-                <footer class="page-footer yellow text-dark z-depth-1 rounded">
+                <footer class="page-footer pb-5 yellow text-dark z-depth-1 rounded">
                     <div class="container">
-                        <div class="row">
+                        <div class="row pt-3 pb-5">
                             <div class="col-sm-6">
                                 <h6 style="border-bottom:1px solid">Weitere Informationen</h6>
-                                <p>
-                                    <a href="impressum.html" style="color:black"
-                                        onmouseover="this.style.textDecoration='underline'"
-                                        onmouseout="this.style.textDecoration='none'">Impressum</a>
-                                </p>
-                                <p>
-                                    <a href="datenschutz.html" style="color:black"
-                                        onmouseover="this.style.textDecoration='underline'"
-                                        onmouseout="this.style.textDecoration='none'"
-                                        >Datenschutz</a>
-                                </p>
+                                <p><a href="impressum.html" style="color:black"
+                                    onmouseover="this.style.textDecoration='underline'"
+                                    onmouseout="this.style.textDecoration='none'">Impressum</a></p>
+                                <p><a href="datenschutz.html" style="color:black"
+                                    onmouseover="this.style.textDecoration='underline'"
+                                    onmouseout="this.style.textDecoration='none'">Datenschutz</a></p>
                             </div>
                             <div class="col-sm-6">
                                 <h6 style="border-bottom:1px solid">Kontakt</h6>
@@ -112,6 +122,7 @@
                                 <p>Stefan Heider:</p>
                             </div>
                         </div>
+                        <div class="row pb-5"></div>
                     </div>
                 </footer>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"><xsl:text> </xsl:text></script>
@@ -132,146 +143,6 @@
     </xsl:template>
 
     <xsl:template match="files">
-<<<<<<< HEAD
-        <xsl:for-each select="file"> 
-             <xsl:variable name="fragID">
-                 <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
-             </xsl:variable>
-             <xsl:variable name="fragID">                 
-                 <xsl:value-of select="replace(replace(replace(replace($fragID, ',', ''), ' ', ''), '-', ''), '–', '')"/>
-             </xsl:variable>       
-             
-             <div class="card">
-                 <div class="card-header">
-                     <xsl:attribute name="id">
-                         <xsl:text>heading</xsl:text>
-                         <xsl:value-of select="$fragID"/>
-                     </xsl:attribute>
-                     <h5 class="mb-0">
-                         <button class="btn btn-link" data-toggle="collapse" aria-expanded="false">
-                             <xsl:attribute name="aria-controls">
-                                 <xsl:text>collapse</xsl:text>
-                                 <xsl:value-of select="$fragID"/>
-                             </xsl:attribute>
-                             <xsl:attribute name="data-target">
-                                 <xsl:text>#collapse</xsl:text>
-                                 <xsl:value-of select="$fragID"/>
-                             </xsl:attribute>                                                
-                             <xsl:apply-templates select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
-                         </button>
-                     </h5>
-                 </div>
-                 <div>
-                     <xsl:attribute name="id">
-                         <xsl:text>collapse</xsl:text>
-                         <xsl:value-of select="$fragID"/>
-                     </xsl:attribute>
-                     <xsl:attribute name="class">collapse</xsl:attribute>
-                     <xsl:attribute name="aria-labelledby">
-                         <xsl:text>heading</xsl:text>
-                         <xsl:value-of select="$fragID"/>
-                     </xsl:attribute>
-                     <xsl:attribute name="data-parent">#accordion</xsl:attribute>   
-                     
-                     <!-- Eigentliches Fragment bzw. der Inhalt der Card -->
-                     
-                     <div class="card-body">   
-                         
-                             <div class="row">
-                                 <xsl:for-each select="document(.)/t:TEI/t:facsimile/t:surface">
-                                     
-                                     <xsl:variable name="imgsrc">
-                                         <xsl:value-of select="t:graphic/@url"/>
-                                     </xsl:variable>
-                                     <xsl:variable name="imgsrc">
-                                         <xsl:value-of select="replace($imgsrc, 'file:///', '../graphic/')"/>
-                                     </xsl:variable>
-                                     <div class="col">                            
-                                         <img>
-                                             <xsl:attribute name="src">
-                                                 <xsl:value-of select="$imgsrc"/>
-                                             </xsl:attribute>
-                                             <xsl:attribute name="width">100%</xsl:attribute>
-                                         </img>                            
-                                     </div>
-                                 </xsl:for-each>
-                             </div> 
-                         <br/>
-                             <div class="row">
-                                 <div class="col"><b>Original</b></div>
-                             </div>
-                             <xsl:if test="count(document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]) &gt; 1">
-                                <div class="row">
-                                     <div class="col"><i>recto</i></div>
-                                     <div class="col"><i>verso</i></div>                                 
-                                </div>
-                             </xsl:if>
-                             <div class="row">
-                                 <xsl:for-each select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]">
-                                     <div class="col">
-                                         <xsl:for-each select="t:lg/t:l">
-                                             <xsl:apply-templates/>
-                                             <br/>
-                                         </xsl:for-each>
-                                     </div>   
-                                 </xsl:for-each>                            
-                             </div> 
-                             <br/>
-                             <div class="row">
-                                <div class="col"><b>Übersetzung</b></div>
-                             </div>
-                             <xsl:if test="count(document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]) &gt; 1">
-                                <div class="row">
-                                    <div class="col"><i>recto</i></div>
-                                    <div class="col"><i>verso</i></div>                                 
-                                </div>
-                             </xsl:if>
-                             <div class="row">
-                                 <!-- TODO: Hier muss im XML noch die Adresse angegeben werden -->
-                                 <xsl:for-each select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'translation')]">
-                                     <div class="col">
-                                         <xsl:for-each select="t:lg/t:l">
-                                             <a href="https://www.bibleserver.com"><img src="..\html\icons\deutsch.jpg"/></a>
-                                             <xsl:text>   </xsl:text>
-                                             <a href="https://www.bibleserver.com"><img src="..\html\icons\englisch.jpg"/></a>
-                                         </xsl:for-each>
-                                     </div>   
-                                 </xsl:for-each> 
-                             </div>
-                             <!-- origindate und textlang. was ist mit Rest? -->
-                             <br/><br/>
-                             <div class="row">
-                                 <div class="col"><h3>Metadaten</h3></div>
-                             </div>
-                             <div class="row">
-                                 <div class="col-sm-4"><b>Typ</b></div>
-                                 <div class="col-sm-8"><xsl:value-of select="document(.)/t:TEI/t:text/t:body/t:listBibl/t:msDesc/t:physDesc/t:p"/></div>
-                             </div>
-                             <div class="row">
-                                 <div class="col-sm-4"><b>Sprache</b></div>
-                                 <div class="col-sm-8"><xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:textLang"/></div>
-                             </div>
-                             <div class="row">
-                                 <div class="col-sm-4"><b>Ursprung</b></div>
-                                 <div class="col-sm-8">
-                                     <xsl:text>Zwischen </xsl:text>
-                                     <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:origDate/@notBefore"/>
-                                     <xsl:text> und </xsl:text>
-                                     <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:origDate/@notAfter"/>
-                                 </div>
-                             </div>                                        
-                     </div>
-                 </div>                                
-             </div>
-        </xsl:for-each>
-    </xsl:template>
-    
-    <xsl:template match="t:l">
-       
-        <xsl:apply-templates/>
-    </xsl:template>
-</xsl:stylesheet>
-=======
         <xsl:for-each select="file">
             <xsl:variable name="fragID">
                 <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"
@@ -347,49 +218,67 @@
                                 <b>Original</b>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <i>recto</i>
+                        <xsl:if
+                            test="count(document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]) &gt; 1">
+                            <div class="row">
+                                <div class="col">
+                                    <i>recto</i>
+                                </div>
+                                <div class="col">
+                                    <i>verso</i>
+                                </div>
                             </div>
-                            <div class="col">
-                                <i>verso</i>
-                            </div>
-                        </div>
+                        </xsl:if>
                         <div class="row">
                             <xsl:for-each
                                 select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]">
                                 <div class="col">
-                                    <xsl:for-each select="t:lg/t:l">
-                                        <xsl:apply-templates/>
-                                        <br/>
-                                    </xsl:for-each>
+                                    <xsl:apply-templates select="t:m"/>
+                                    <xsl:apply-templates select="t:expan"/>
+                                    <xsl:apply-templates select="t:abbr"/>
+                                    <xsl:apply-templates select="t:lg/t:l"/>  
                                 </div>
                             </xsl:for-each>
                         </div>
                         <br/>
-                        <div class="row">
-
-                            <div class="col-sm-4">
+                        <!--<div class="row">
+                            <div class="col">
                                 <b>Übersetzung</b>
                             </div>
-                            <div class="col-sm-8">
-                                <a href="https://www.bibleserver.com">Schau selber nach :)</a>
-                            </div>
                         </div>
+                        <xsl:if test="count(document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]) &gt; 1">
+                            <div class="row">
+                                <div class="col">
+                                    <i>recto</i>
+                                </div>
+                                <div class="col">
+                                    <i>verso</i>
+                                </div>
+                            </div>
+                        </xsl:if>
                         <div class="row">
+                            <!-\- TODO: Hier muss im XML noch die Adresse angegeben werden -\->
                             <xsl:for-each
                                 select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'translation')]">
-                                <td>
-                                    <xsl:apply-templates select="t:lg"/>
-                                </td>
+                                <div class="col">
+                                    <xsl:for-each select="t:lg/t:l">
+                                        <a href="https://www.bibleserver.com">
+                                            <img src="..\html\icons\deutsch.jpg"/>
+                                        </a>
+                                        <xsl:text>   </xsl:text>
+                                        <a href="https://www.bibleserver.com">
+                                            <img src="..\html\icons\englisch.jpg"/>
+                                        </a>
+                                    </xsl:for-each>
+                                </div>
                             </xsl:for-each>
-                        </div>
+                        </div>-->
                         <!-- origindate und textlang. was ist mit Rest? -->
                         <br/>
                         <br/>
                         <div class="row">
                             <div class="col">
-                                <h4>Metadaten</h4>
+                                <h3>Metadaten</h3>
                             </div>
                         </div>
                         <div class="row">
@@ -431,6 +320,28 @@
             </div>
         </xsl:for-each>
     </xsl:template>
-
-</xsl:stylesheet>
->>>>>>> d57cad837cb4a3b811ab229f7429f382f8e57d2c
+    
+    <xsl:template match="t:m">
+        <i><xsl:text>[</xsl:text>
+        <xsl:value-of select="@ana"/>
+        <xsl:text>] </xsl:text></i>
+    </xsl:template>
+    
+    <xsl:template match="t:expan">
+        <span class="expan" style="display: none">
+            <xsl:apply-templates/> 
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="t:abbr">
+        <span class="abbr" style="display: inline">
+            <xsl:apply-templates/> 
+        </span>
+    </xsl:template>        
+        
+    <xsl:template match="t:lg/t:l">
+        <xsl:apply-templates/> 
+        <br/>
+    </xsl:template> 
+    
+    </xsl:stylesheet>
