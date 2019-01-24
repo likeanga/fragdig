@@ -17,21 +17,19 @@
                 <script src="https://code.jquery.com/jquery-1.12.4.js"><xsl:text> </xsl:text></script>
                 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"><xsl:text> </xsl:text></script>
                 <script src="../js/mdb.min.js"><xsl:text> </xsl:text></script>
-                <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+                <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
                     $(document).ready(function() {
-                         $(("#box1").click(function(){
-                                                  
-                             if ($("#box1").prop('checked', true))
-                             {
-                                 $(".expan").show();
-                                 $(".abbr").hide();    
-                             }
-                             if ($("#box1").prop('checked', false))
-                             {
-                                 $(".expan").hide();
-                                 $(".abbr").show();    
-                             }  
-                         })
+                        function toggleFunction(className1, className2, obj) {
+                            var $input = $(obj);
+                            if ($input.prop('checked')){
+                                $(className1).hide();
+                                $(className2).show();
+                            }
+                            else {
+                                $(className1).show();
+                                $(className2).hide();
+                            }
+                        }
                     }
                 </script>-->
                 <!-- xsl:text mit Leerzeichen ist bei all den Scripts notwendig, da die Seite ansonsten nicht funktioniert. Gott weiß, warum -->
@@ -88,7 +86,7 @@
                         <div class="col-sm-12 p-0">
                             <div class="container yellow lighten-4 border z-depth-1 rounded">
                                 <h2 class="pt-3 pb-2"><u>Fragmente</u></h2>
-                                <!--<input type="checkbox" name="checkbox" id="box1">Abkürzungen aufschlüsseln</input>-->
+                                <!--<input type="checkbox" onclick="toggleFunction('.abbr', '.expan', this)"> Abkürzungen aufschlüsseln</input>-->
                                 <!-- Akkordion -->
 
                                 <div id="accordion">
