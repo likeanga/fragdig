@@ -132,6 +132,146 @@
     </xsl:template>
 
     <xsl:template match="files">
+<<<<<<< HEAD
+        <xsl:for-each select="file"> 
+             <xsl:variable name="fragID">
+                 <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
+             </xsl:variable>
+             <xsl:variable name="fragID">                 
+                 <xsl:value-of select="replace(replace(replace(replace($fragID, ',', ''), ' ', ''), '-', ''), '–', '')"/>
+             </xsl:variable>       
+             
+             <div class="card">
+                 <div class="card-header">
+                     <xsl:attribute name="id">
+                         <xsl:text>heading</xsl:text>
+                         <xsl:value-of select="$fragID"/>
+                     </xsl:attribute>
+                     <h5 class="mb-0">
+                         <button class="btn btn-link" data-toggle="collapse" aria-expanded="false">
+                             <xsl:attribute name="aria-controls">
+                                 <xsl:text>collapse</xsl:text>
+                                 <xsl:value-of select="$fragID"/>
+                             </xsl:attribute>
+                             <xsl:attribute name="data-target">
+                                 <xsl:text>#collapse</xsl:text>
+                                 <xsl:value-of select="$fragID"/>
+                             </xsl:attribute>                                                
+                             <xsl:apply-templates select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
+                         </button>
+                     </h5>
+                 </div>
+                 <div>
+                     <xsl:attribute name="id">
+                         <xsl:text>collapse</xsl:text>
+                         <xsl:value-of select="$fragID"/>
+                     </xsl:attribute>
+                     <xsl:attribute name="class">collapse</xsl:attribute>
+                     <xsl:attribute name="aria-labelledby">
+                         <xsl:text>heading</xsl:text>
+                         <xsl:value-of select="$fragID"/>
+                     </xsl:attribute>
+                     <xsl:attribute name="data-parent">#accordion</xsl:attribute>   
+                     
+                     <!-- Eigentliches Fragment bzw. der Inhalt der Card -->
+                     
+                     <div class="card-body">   
+                         
+                             <div class="row">
+                                 <xsl:for-each select="document(.)/t:TEI/t:facsimile/t:surface">
+                                     
+                                     <xsl:variable name="imgsrc">
+                                         <xsl:value-of select="t:graphic/@url"/>
+                                     </xsl:variable>
+                                     <xsl:variable name="imgsrc">
+                                         <xsl:value-of select="replace($imgsrc, 'file:///', '../graphic/')"/>
+                                     </xsl:variable>
+                                     <div class="col">                            
+                                         <img>
+                                             <xsl:attribute name="src">
+                                                 <xsl:value-of select="$imgsrc"/>
+                                             </xsl:attribute>
+                                             <xsl:attribute name="width">100%</xsl:attribute>
+                                         </img>                            
+                                     </div>
+                                 </xsl:for-each>
+                             </div> 
+                         <br/>
+                             <div class="row">
+                                 <div class="col"><b>Original</b></div>
+                             </div>
+                             <xsl:if test="count(document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]) &gt; 1">
+                                <div class="row">
+                                     <div class="col"><i>recto</i></div>
+                                     <div class="col"><i>verso</i></div>                                 
+                                </div>
+                             </xsl:if>
+                             <div class="row">
+                                 <xsl:for-each select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]">
+                                     <div class="col">
+                                         <xsl:for-each select="t:lg/t:l">
+                                             <xsl:apply-templates/>
+                                             <br/>
+                                         </xsl:for-each>
+                                     </div>   
+                                 </xsl:for-each>                            
+                             </div> 
+                             <br/>
+                             <div class="row">
+                                <div class="col"><b>Übersetzung</b></div>
+                             </div>
+                             <xsl:if test="count(document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'original')]) &gt; 1">
+                                <div class="row">
+                                    <div class="col"><i>recto</i></div>
+                                    <div class="col"><i>verso</i></div>                                 
+                                </div>
+                             </xsl:if>
+                             <div class="row">
+                                 <!-- TODO: Hier muss im XML noch die Adresse angegeben werden -->
+                                 <xsl:for-each select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'translation')]">
+                                     <div class="col">
+                                         <xsl:for-each select="t:lg/t:l">
+                                             <a href="https://www.bibleserver.com"><img src="..\html\icons\deutsch.jpg"/></a>
+                                             <xsl:text>   </xsl:text>
+                                             <a href="https://www.bibleserver.com"><img src="..\html\icons\englisch.jpg"/></a>
+                                         </xsl:for-each>
+                                     </div>   
+                                 </xsl:for-each> 
+                             </div>
+                             <!-- origindate und textlang. was ist mit Rest? -->
+                             <br/><br/>
+                             <div class="row">
+                                 <div class="col"><h3>Metadaten</h3></div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-sm-4"><b>Typ</b></div>
+                                 <div class="col-sm-8"><xsl:value-of select="document(.)/t:TEI/t:text/t:body/t:listBibl/t:msDesc/t:physDesc/t:p"/></div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-sm-4"><b>Sprache</b></div>
+                                 <div class="col-sm-8"><xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:textLang"/></div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-sm-4"><b>Ursprung</b></div>
+                                 <div class="col-sm-8">
+                                     <xsl:text>Zwischen </xsl:text>
+                                     <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:origDate/@notBefore"/>
+                                     <xsl:text> und </xsl:text>
+                                     <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:origDate/@notAfter"/>
+                                 </div>
+                             </div>                                        
+                     </div>
+                 </div>                                
+             </div>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="t:l">
+       
+        <xsl:apply-templates/>
+    </xsl:template>
+</xsl:stylesheet>
+=======
         <xsl:for-each select="file">
             <xsl:variable name="fragID">
                 <xsl:value-of select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"
@@ -293,3 +433,4 @@
     </xsl:template>
 
 </xsl:stylesheet>
+>>>>>>> d57cad837cb4a3b811ab229f7429f382f8e57d2c

@@ -73,6 +73,50 @@
     </facsimile>
     <text>
         <body>
+<<<<<<< HEAD
+=======
+            <listBibl>
+                <msDesc>
+                    <!-- noch mehr Elemente -->
+                    <msIdentifier>
+                        <settlement>Graz</settlement>
+                        <repository>GAMS</repository>
+                        <msName xml:lang="la"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>Parchment</support>
+                                <extent>
+                                    <dimensions>
+                                        <heigt></heigt>
+                                        <width></width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <!--  <p>Pergamentfragment</p> -->
+                    </physDesc>
+                </msDesc>
+            </listBibl>
+            
+            <!--  
+                <physDesc>
+            <objectDesc form="codex">
+                <supportDesc material="perg"> ah: unbedingt rein
+                    <support>
+                        <p>Parchment.</p>
+                    </support>
+                    <extent>i + 55 leaves <dimensions scope="all" type="leaf"
+                        unit="inch">
+                        <height>7¼</height>
+                        <width>5⅜</width>
+                    </dimensions>
+                    </extent>
+                </supportDesc>
+            -->
+            
+>>>>>>> c8e3f5258d3e36376828e8616d22fd085a6f5123
             <!-- recto -->
             <pb type="folio" facs="#img.fol.1r"/>
             <div type="original" xml:lang="la">
