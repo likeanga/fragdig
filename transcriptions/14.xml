@@ -100,7 +100,7 @@
             <pb type="folio" facs="#img.fol.14r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="67,17"/>Mons in quo beneplacitum est Deo habita</l>
+                    <l><milestone ana="67,17"/>Mons in quo beneplacitum est Deo habita</l>
                     <l>[re in eo, etenim Dominus habitabit in finem.]</l>
                 </lg>
             </div>
@@ -114,7 +114,7 @@
             <!-- verso -->
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="67,24"/>[lingua canum tuorum ex in]</l>
+                    <l><milestone ana="67,24"/>[lingua canum tuorum ex in]</l>
                     <l>imicis ab ipso.</l>
                 </lg>
             </div>

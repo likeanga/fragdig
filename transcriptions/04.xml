@@ -102,8 +102,8 @@
             <pb type="folio" facs="#img.fol.4r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="106,25"/>Dixit et stetit spiritus procellae et exaltati sunt</l>
-                    <l><m ana="106,26"/>Ascendunt usque ad celos, et descendunt</l>
+                    <l><milestone ana="106,25"/>Dixit et stetit spiritus procellae et exaltati sunt</l>
+                    <l><milestone ana="106,26"/>Ascendunt usque ad celos, et descendunt</l>
                     <l>usque ad abyssos, anima eorum in malis [tabescebat.]</l>
                 </lg>
             </div>
@@ -118,9 +118,9 @@
             <pb type="folio" facs="#img.fol.4v"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="106,35"/>Posuit desertum in stagna aquarum</l>
+                    <l><milestone ana="106,35"/>Posuit desertum in stagna aquarum</l>
                     <l>et terram sine aqua in exitus aquarum.</l>
-                    <l><m ana="106,36"/>Et collocavit illic esurientes, et consti</l>
+                    <l><milestone ana="106,36"/>Et collocavit illic esurientes, et consti</l>
                     <l>tuerunt [civitatem habitationis.]</l>
                     <!-- auf Fragment abgeschnitten -->
                 </lg>

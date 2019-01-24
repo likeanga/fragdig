@@ -100,12 +100,12 @@
             <pb type="folio" facs="#img.fol.17r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="67,10"/>[Pluviam voluntariam segregabis]</l>
+                    <l><milestone ana="67,10"/>[Pluviam voluntariam segregabis]</l>
                     <l>Deus, hereditati tuae, et infirmata est,</l>
                     <l>tu vero perfecisti eam.</l>
-                    <l><m ana="67,11"/>Animalia tua habitabunt in ea, pa</l>
+                    <l><milestone ana="67,11"/>Animalia tua habitabunt in ea, pa</l>
                     <l>rasti in dulcedine tua pauperi, Deus.</l>
-                    <l><m ana="67,12"/>Dominus dabit verbum evangelizantibus</l>
+                    <l><milestone ana="67,12"/>Dominus dabit verbum evangelizantibus</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -118,11 +118,11 @@
             <!-- verso -->
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="67,18"/>[multi]plex milia tetantum, Dominus in Sinai in sancto</l>
-                    <l><m ana="67,19"/>Ascendisti in altum cepisti captivitatem</l>
+                    <l><milestone ana="67,18"/>[multi]plex milia tetantum, Dominus in Sinai in sancto</l>
+                    <l><milestone ana="67,19"/>Ascendisti in altum cepisti captivitatem</l>
                     <l>accepisti dona in hominibus.</l>
                     <l>Etenim non credentes inhabitare Dominum Deum</l>
-                    <l><m ana="67,20"/>Benedictus Dominus die cottidie</l>
+                    <l><milestone ana="67,20"/>Benedictus Dominus die cottidie</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">

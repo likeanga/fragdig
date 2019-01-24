@@ -100,9 +100,9 @@
             <pb type="folio" facs="#img.fol.15r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="5,7"/>[iniquita]tem perdes omnes qui locuntur mendacium.</l>
+                    <l><milestone ana="5,7"/>[iniquita]tem perdes omnes qui locuntur mendacium.</l>
                     <l>Virum sanguinum et dolosum abomi</l>
-                    <l>nabitur Dominus, <m ana="5,8"/>ego autem in multitudine</l>
+                    <l>nabitur Dominus, <milestone ana="5,8"/>ego autem in multitudine</l>
                     <l>misericordiae tuae.</l>
                     <l>Introibo in domum tuam, adorab[o ad] </l>
                     <l>templum sanctum tuum in timo[re tuo.]</l>
@@ -118,9 +118,9 @@
             <!-- verso -->
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="5,12"/>nomen tuum, <m ana="5,13"/>quoniam tu benedicis iusto,</l>
+                    <l><milestone ana="5,12"/>nomen tuum, <milestone ana="5,13"/>quoniam tu benedicis iusto,</l>
                     <l>Domine ut scuto bonae voluntatis tuae</l>
-                    <l>coronasti nos. <!-- ab hier rubriziert -->PSAL[mus] DD … VI <m ana="6,2"
+                    <l>coronasti nos. <!-- ab hier rubriziert -->PSAL[mus] DD … VI <milestone ana="6,2"
                         />DOMI</l>
                     <l>NE, NE IN FURORE</l>
                     <l>tuo arguas me neque</l>

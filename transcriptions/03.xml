@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -102,10 +102,10 @@
             <pb type="folio" facs="#img.fol.3r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l><m ana="56,8"/>[Paratum cor meum]</l>
+                    <l><milestone ana="56,8"/>[Paratum cor meum]</l>
                     <l>Deus, paratum cor meum,</l>
                     <l>cantabo et spallam [!] in gloria mea.</l>
-                    <l>[Vg: et psalmum dicam] <m ana="56,9"/>Exurge […] psalterium et cithara</l>
+                    <l>[Vg: et psalmum dicam] <milestone ana="56,9"/>Exurge […] psalterium et cithara</l>
                     <!-- die letzte  Zeile ist eigentlich nicht mehr auf dem Bildfragment -->
                 </lg>
             </div>
@@ -121,9 +121,9 @@
             <div type="original" xml:lang="la">
                 <lg>
 
-                    <l><m ana="59,11"/> Quis deducet me in civitatem munitam,</l>
+                    <l><milestone ana="59,11"/> Quis deducet me in civitatem munitam,</l>
                     <l>quis deducet me usque Idumaeam</l>
-                    <l><m ana="59,12"/>Nonne tu Deus qui repulisti nos et non ex</l>
+                    <l><milestone ana="59,12"/>Nonne tu Deus qui repulisti nos et non ex</l>
                     <!-- die letzte  Zeile ist eigentlich nicht mehr auf dem Bildfragment -->
 
                 </lg>

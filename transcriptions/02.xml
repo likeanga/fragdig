@@ -33,6 +33,7 @@
                 <idno type="PID">hier brauchen wir den PID</idno>
             </publicationStmt>
             <sourceDesc>
+   
                 <msDesc>
                     <msIdentifier>
                         <settlement/>
@@ -46,28 +47,29 @@
                             <title/>
                         </msItem>
                     </msContents>
-                    <physDesc>
+                    <!-- <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>Parchment</support>
                                 <extent>
                                     <dimensions>
-                                        <!-- Ps 58,6-7 / Ps 58,13-14: 18,6 x 6,2 cm -->
-                                        <height></height>
-                                        <width></width>
+                                        Ps 58,6-7 / Ps 58,13-14: 18,6 x 6,2 cm 
+                                        <height/>
+                                        <width/>
                                     </dimensions>
                                 </extent>
                             </supportDesc>
                         </objectDesc>
-                        <!--  <p>Pergamentfragment</p> -->
-                    </physDesc>
+                          <p>Pergamentfragment</p> 
+                    </physDesc> -->
                     <history>
                         <origin>
                             <origDate notBefore="0800" notAfter="1600"/>
                             <origPlace/>
                         </origin>
                     </history>
-                </msDesc>
+                </msDesc> 
+
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -84,30 +86,16 @@
     </facsimile>
     <text>
         <body>
-            <listBibl>
-                <msDesc>
-                    <!-- noch mehr Elemente -->
-                    <msIdentifier>
-                        <settlement>Graz</settlement>
-                        <repository>GAMS</repository>
-                        <msName xml:lang="la"/>
-                    </msIdentifier>
-                    <physDesc>
-                        <p>Pergamentfragment</p>
-                    </physDesc>
-                </msDesc>
-            </listBibl>
-
             <!-- recto -->
             <pb type="folio" facs="#img.fol.2r"/>
             <div type="original" xml:lang="la">
                 <lg>
                     <!-- Problem: Text auf Fragmentbild beginnt erst bei intende -->
-                    <l><m ana="58,6"/>[Et tu Domine Deus] virtutum, Deus Israel. Intende ad
+                    <l><milestone ana="58,6"/>[Et tu Domine Deus] virtutum, Deus Israel. Intende ad
                         visitandas omnes gentes,</l>
                     <l>non miserearis omnibus qui ope</l>
                     <l>rantur iniquitatem.</l>
-                    <l><m ana="58,7"/>Convertentur ad vesperam et fa</l>
+                    <l><milestone ana="58,7"/>Convertentur ad vesperam et fa</l>
                     <l>men patientur ut canes et circu[ibunt civitatem]</l>
                 </lg>
             </div>
@@ -123,10 +111,10 @@
             <div type="original" xml:lang="la">
                 <lg>
                     <!-- erste Zeile nicht auf Bild! -->
-                    <l><m ana="58,13"/>Delictum oris eorum sermonem labiorum </l>
+                    <l><milestone ana="58,13"/>Delictum oris eorum sermonem labiorum </l>
                     <l>ipsorum: et comprehendant in superbia sua.</l>
                     <l>Et de execratione et mendatio an</l>
-                    <l>nuntiabuntur <m ana="58,14"/>in consumatione,</l>
+                    <l>nuntiabuntur <milestone ana="58,14"/>in consumatione,</l>
                     <l>in ira consumationis et non erunt.</l>
                     <l>Et scient quia Deus dominabitur [Iacob].</l>
                 </lg>
