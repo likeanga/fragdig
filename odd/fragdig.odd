@@ -2010,6 +2010,11 @@
           <attDef ident="edRef" mode="delete"/>
           <attDef ident="spanTo" mode="delete"/>
           <attDef ident="break" mode="delete"/>
+          <attDef ident="ana" mode="replace" usage="opt">
+            <datatype>
+              <dataRef key="teidata.pointer"/>
+            </datatype>
+          </attDef>
         </attList>
       </elementSpec>
       
