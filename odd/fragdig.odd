@@ -1997,7 +1997,7 @@
           <attDef ident="prev" mode="delete"/>
           <attDef ident="exclude" mode="delete"/>
           <attDef ident="select" mode="delete"/>
-          <attDef ident="ana" mode="change" usage="opt"/>
+          <!--  <attDef ident="ana" mode="change" </attDef> -->
           <attDef ident="facs" mode="delete"/>
           <attDef ident="change" mode="delete"/>
           <attDef ident="cert" mode="delete"/>
@@ -2012,6 +2012,17 @@
           <attDef ident="break" mode="delete"/>
         </attList>
       </elementSpec>
+      
+      <!-- width
+      msdescription — Manuscript Description
+      att.global (@xml:id, @n, @xml:lang, @xml:base, @xml:space) (att.global.rendition (@rend, @style, @rendition)) 
+      (att.global.linking (@corresp, @synch, @sameAs, @copyOf, @next, @prev, @exclude, @select)) (att.global.analytic (@ana)) 
+      (att.global.facs (@facs)) (att.global.change (@change)) (att.global.responsibility (@cert, @resp)) (att.global.source (@source)) 
+      att.dimensions (@unit, @quantity, @extent, @precision, @scope) (att.ranging (@atLeast, @atMost, @min, @max, @confidence))
+      
+      
+      
+      -->
      
     </body>
   </text>
