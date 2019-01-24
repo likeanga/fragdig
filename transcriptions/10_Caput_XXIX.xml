@@ -27,8 +27,8 @@
                 <date when="2018-12-13">2018</date>
                 <availability>
                     <p>Dieses Werk ist lizenziert unter einer<ref
-                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attribution-NonCommercial-ShareAlike 4.0
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0
                         International</ref>Lizenz. </p>
                 </availability>
                 <idno type="PID">hier brauchen wir den PID</idno>
@@ -82,16 +82,12 @@
             <pb type="folio" facs="#img.fol.10r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>
-                        HAYMO_HALBERSTATENSIS, De varietate librorum, 2, 39
-                        (PL 118 0911A) CAPUT XXXIX. De tolerantia
-                        
-                        (0911C) [In medio nationis prav]
-                        ae et perversae, inter quos luce[tis sicut luminaria]
-                        in mundo <!--<PL: meridie>-->, verbum vitae con[tinentes (Philip. II). Hinc Io]
-                            annes Pergami Ecclesiae attesta[tur dicens: Scio ubi habitas, ubi sedes est Satanae: et tenens nomen
-                            meum, non negasti fidem meam (Apoc. II).]
-                    </l>
+                    <l>[In medio nationis prav]</l>
+                    <l>ae et perversae, inter quos luce[tis sicut luminaria]</l>
+                    <l>in mundo <!--<PL: meridie>-->, verbum vitae con[tinentes (Philip. II). Hinc
+                        Io]</l>
+                    <l>annes Pergami Ecclesiae attesta[tur dicens: Scio ubi habitas, ubi sedes est
+                        Satanae: et tenens nomen meum, non negasti fidem meam (Apoc. II).]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
@@ -103,6 +99,3 @@
         </body>
     </text>
 </TEI>
-
-
-

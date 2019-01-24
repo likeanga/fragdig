@@ -81,26 +81,20 @@
             </listBibl>
             <pb type="folio" facs="#img.fol.11r"/>
             <div type="original" xml:lang="la">
-                <lg>
-                    <l>
-                        Sancti Gregorii I Magni Romani Pontificis XL HOMILIARUM IN EVANGELIA
-                        HOMILIA XXXVIII,
-                        Habita ad populum in basilica beati Clementis martyris
-                        LECTIO S. EVANG. SEC. MATTH. XXII, 1-13
-                        
-                        [Hinc per Salomonem spon]
-                        si voce sanctae Ecclesiae dicitur: Sicut lilium inter spinas, sic
-                        amica mea inter filias (Cant. II, 2). Hinc ad Ezechielem Dominus
-                        dicit: Fili hominis, increduli et subversores sunt
-                        tecum, et cum scorpionibus habitas (Ezech. II, 6). Hinc Petrus beati
-                        Lot vitam glorificat, dicens: Et justum Lot op
-                        pressum a nefandorum injuria conversatione eruit.
-                        Aspectu enim et auditu justus erat, habitans apud [inter]
-                        eos qui de die in diem animam justam iniquis operibus
-                        cruciabant (II Pet. II, 7, 8, seq.). Hinc Paulus discipulorum [vitam et laudat et roborat, dicens: In medio
-                        nationis pravae et perversae, inter quos lucetis sicut luminaria in mundo, verbum vitae continentes
-                        (Philip. II, 15).]
-                    </l>
+                <lg>       
+                        <l>[Hinc per Salomonem spon]</l>
+                        <l>si voce sanctae Ecclesiae dicitur: Sicut lilium inter spinas, sic</l>
+                        <l>amica mea inter filias (Cant. II, 2). Hinc ad Ezechielem Dominus</l>
+                        <l>dicit: Fili hominis, increduli et subversores sunt</l>
+                        <l>tecum, et cum scorpionibus habitas (Ezech. II, 6). Hinc Petrus beati</l>
+                        <l>Lot vitam glorificat, dicens: Et justum Lot op</l>
+                        <l>pressum a nefandorum injuria conversatione eruit.</l>
+                        <l>Aspectu enim et auditu justus erat, habitans apud [inter]</l>
+                        <l>eos qui de die in diem animam justam iniquis operibus</l>
+                        <l>cruciabant (II Pet. II, 7, 8, seq.). <!-- ab hier am Fragment nicht mehr lesbar! --> Hinc Paulus discipulorum [vitam et laudat et roborat, dicens: In medio</l>
+                        <l>nationis pravae et perversae, inter quos lucetis sicut luminaria in mundo, verbum vitae continentes</l>
+                        <l>(Philip. II, 15).]</l><!-- das überhaupt drin lassen? -->
+                    
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
