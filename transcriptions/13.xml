@@ -101,7 +101,7 @@
             <div type="original" xml:lang="la">
                 <lg>
                     <!-- erste Zeile abgeschnitten -->
-                    <l><m ana="62,6"/>Sicut adipe et pinguedine repleatur</l>
+                    <l><milestone ana="62,6"/>Sicut adipe et pinguedine repleatur</l>
                     <l>anima mea: et labia exultationis [laudabit os meum.]</l>
                 </lg>
             </div>
@@ -115,7 +115,7 @@
             <!-- verso -->
             <div type="original" xml:lang="la">
                 <lg><!-- erste Zeile abgeschnitten -->
-                    <l><m ana="63,2"/>[Exaudi Deus orationem meam cum] deprecor, a timore in</l>
+                    <l><milestone ana="63,2"/>[Exaudi Deus orationem meam cum] deprecor, a timore in</l>
                     <l>imici eripe animam meam.</l>
 
                 </lg>

@@ -102,10 +102,10 @@
             <pb type="folio" facs="#img.fol.5r"/>
             <div type="original" xml:lang="la">
                 <lg>
-                    <l>106,27: omnis sapientia eorum devorata est.</l>
-                    <l>106,28: Et clamaverunt ad Dominum cum tribularentur</l>
+                    <l><milestone ana="106,27"/>omnis sapientia eorum devorata est.</l>
+                    <l><milestone ana="106,28"/>Et clamaverunt ad Dominum cum tribularentur</l>
                     <l>et de necessitatibus eorum eduxit eos.</l>
-                    <l>106,29: Et statuit procellam eius in auram, et silver</l>
+                    <l><milestone ana="106,29"/> Et statuit procellam eius in auram, et silver</l>
                     <l>[unt fluctus eius.]</l>
                     <!-- nicht auf Bild -->
                 </lg>
@@ -121,10 +121,10 @@
             <pb type="folio" facs="#img.fol.5v"/>
             <div type="original" xml:lang="la">
                 <lg><!-- erste und letzte Zeile nicht auf Bild -->
-                    <l><m ana="106,37"/>vineas et feceruntfructum nativitatis.</l>
-                    <l><m ana="106,38"/>Et benedixit eis et multiplicati sunt ni</l>
+                    <l><milestone ana="106,37"/>vineas et feceruntfructum nativitatis.</l>
+                    <l><milestone ana="106,38"/>Et benedixit eis et multiplicati sunt ni</l>
                     <l>mis, et iumenta eoru non minoravit.</l>
-                    <l><m ana="106,39"/>Et pauci facti sunt et vexati sunt a tri</l>
+                    <l><milestone ana="106,39"/>Et pauci facti sunt et vexati sunt a tri</l>
                     <l>bulatione malorum et dolore.</l>
                 </lg>
             </div>
