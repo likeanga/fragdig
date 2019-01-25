@@ -1850,7 +1850,7 @@
           <attDef ident="exclude" mode="delete"/>
           <attDef ident="select" mode="delete"/>
           <attDef ident="ana" mode="delete"/>
-          <attDef ident="facs" mode="delete"/> 
+          <!--  <attDef ident="facs" mode="delete"/> -->
           <attDef ident="change" mode="delete"/> 
           <attDef ident="cert" mode="delete"/>
           <attDef ident="resp" mode="delete"/>
@@ -1865,7 +1865,11 @@
           <attDef ident="min" mode="delete"/>
           <attDef ident="max" mode="delete"/>
           <attDef ident="confidence" mode="delete"/>
-          <attDef ident="type" mode="change" usage="rec" select="leaves ruled pricked written miniatures binding box"/>
+          <attDef ident="type" mode="replace" usage="rec" select="leaves ruled pricked written miniatures binding box">
+            <datatype>
+              <dataRef key="teidata.pointer"/>
+            </datatype>
+          </attDef>
         </attList>
       </elementSpec>
       
@@ -2076,7 +2080,11 @@
           <attDef ident="select" mode="delete"/>
           <attDef ident="ana" mode="delete"/>
           <attDef ident="source" mode="delete"/>
-          <attDef ident="unit" mode="change" usage="rec" select="in mm"/>
+          <attDef ident="unit" mode="replace" usage="rec" select="in mm">
+            <datatype>
+              <dataRef key="teidata.pointer"/>
+            </datatype>
+          </attDef>
           <attDef ident="quantity" mode="delete"/>
           <attDef ident="extent" mode="delete"/>
           <attDef ident="precision" mode="delete"/>

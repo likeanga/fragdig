@@ -52,10 +52,19 @@
                                 <support>Parchment</support>
                                 <extent>
                                     <dimensions unit="mm">
+<<<<<<< HEAD
                                         <!-- <height></height>
                                         <width></width> -->
+=======
+                                        <width></width>
+>>>>>>> a1119324ce1b02dcad50b2cf08d9e7f14ef1be0a
                                     </dimensions>
+                                    <dimensions unit="mm">
+                                        <width></width>
+                                    </dimensions>
+                                 
                                 </extent>
+                               
                             </supportDesc>
                         </objectDesc>
                     </physDesc>
