@@ -21,7 +21,7 @@
         <moduleRef key="core" include="title author respStmt resp pubPlace date p title author respStmt resp name publisher ref textLang graphic listBibl pb head lg l choice abbr expan add milestone"/>
         <moduleRef key="tei"/>
         <moduleRef key="textstructure" include="TEI text body div"/>
-        <moduleRef key="msdescription" include="msDesc msIdentifier repository msContents msItem history origin origDate origPlace msName physDesc objectDesc supportDesc support measure dimensions width"></moduleRef>
+        <moduleRef key="msdescription" include="msDesc msIdentifier repository msContents msItem history origin origDate origPlace msName physDesc objectDesc supportDesc support measure dimensions width height"></moduleRef>
         <moduleRef key="namesdates" include="settlement"/>
         <moduleRef key="transcr" include="facsimile surface zone"></moduleRef>
         <moduleRef key="gaiji" include="g charDecl glyph glyphName mapping"></moduleRef>
@@ -2056,7 +2056,38 @@
         </attList>
       </elementSpec>
       
-     
+      <elementSpec ident="height" module="msdescription" mode="change">
+        <attList>
+          <attDef ident="xml:id" mode="delete"/>
+          <attDef ident="n" mode="delete"/>
+          <attDef ident="xml:lang" mode="delete"/>
+          <attDef ident="xml:base" mode="delete"/>
+          <attDef ident="xml:space" mode="delete"/>
+          <attDef ident="rend" mode="delete"/>
+          <attDef ident="style" mode="delete"/>
+          <attDef ident="rendition" mode="delete"/>
+          <attDef ident="corresp" mode="delete"/>
+          <attDef ident="synch" mode="delete"/>
+          <attDef ident="sameAs" mode="delete"/>
+          <attDef ident="copyOf" mode="delete"/>
+          <attDef ident="next" mode="delete"/>
+          <attDef ident="prev" mode="delete"/>
+          <attDef ident="exclude" mode="delete"/>
+          <attDef ident="select" mode="delete"/>
+          <attDef ident="ana" mode="delete"/>
+          <attDef ident="source" mode="delete"/>
+          <attDef ident="unit" mode="change" usage="rec" select="in mm"/>
+          <attDef ident="quantity" mode="delete"/>
+          <attDef ident="extent" mode="delete"/>
+          <attDef ident="precision" mode="delete"/>
+          <attDef ident="scope" mode="delete"/>
+          <attDef ident="atLeast" mode="delete"/>
+          <attDef ident="atMost" mode="delete"/>
+          <attDef ident="min" mode="delete"/>
+          <attDef ident="max" mode="delete"/>
+          <attDef ident="confidence" mode="delete"/>
+        </attList>
+      </elementSpec>
     </body>
   </text>
 </TEI>
