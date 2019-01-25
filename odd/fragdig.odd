@@ -21,7 +21,7 @@
         <moduleRef key="core" include="title author respStmt resp pubPlace date p title author respStmt resp name publisher ref textLang graphic listBibl pb head lg l choice abbr expan add milestone"/>
         <moduleRef key="tei"/>
         <moduleRef key="textstructure" include="TEI text body div"/>
-        <moduleRef key="msdescription" include="msDesc msIdentifier repository msContents msItem history origin origDate origPlace msName physDesc objectDesc supportDesc support measure dimensions"></moduleRef>
+        <moduleRef key="msdescription" include="msDesc msIdentifier repository msContents msItem history origin origDate origPlace msName physDesc objectDesc supportDesc support measure dimensions width"></moduleRef>
         <moduleRef key="namesdates" include="settlement"/>
         <moduleRef key="transcr" include="facsimile surface zone"></moduleRef>
         <moduleRef key="gaiji" include="g charDecl glyph glyphName mapping"></moduleRef>
@@ -2018,16 +2018,44 @@
         </attList>
       </elementSpec>
       
-      <!-- width
-      msdescription — Manuscript Description
-      att.global (@xml:id, @n, @xml:lang, @xml:base, @xml:space) (att.global.rendition (@rend, @style, @rendition)) 
-      (att.global.linking (@corresp, @synch, @sameAs, @copyOf, @next, @prev, @exclude, @select)) (att.global.analytic (@ana)) 
-      (att.global.facs (@facs)) (att.global.change (@change)) (att.global.responsibility (@cert, @resp)) (att.global.source (@source)) 
-      att.dimensions (@unit, @quantity, @extent, @precision, @scope) (att.ranging (@atLeast, @atMost, @min, @max, @confidence))
+      <elementSpec ident="width" module="msdescription" mode="change">
+        <attList>
+          <attDef ident="xml:id" mode="delete"/>
+          <attDef ident="n" mode="delete"/>
+          <attDef ident="xml:lang" mode="delete"/>
+          <attDef ident="xml:base" mode="delete"/>
+          <attDef ident="xml:space" mode="delete"/>
+          <attDef ident="rend" mode="delete"/>
+          <attDef ident="style" mode="delete"/>
+          <attDef ident="rendition" mode="delete"/>
+          <attDef ident="corresp" mode="delete"/>
+          <attDef ident="synch" mode="delete"/>
+          <attDef ident="sameAs" mode="delete"/>
+          <attDef ident="copyOf" mode="delete"/>
+          <attDef ident="next" mode="delete"/>
+          <attDef ident="prev" mode="delete"/>
+          <attDef ident="exclude" mode="delete"/>
+          <attDef ident="select" mode="delete"/>
+          <attDef ident="ana" mode="delete"/>
+          <attDef ident="facs" mode="delete"/>
+          <attDef ident="change" mode="delete"/>
+          <attDef ident="cert" mode="delete"/>
+          <attDef ident="resp" mode="delete"/>
+          <attDef ident="source" mode="delete"/>
+          <attDef ident="unit" mode="change" usage="rec" select="in mm"/>
+          <attDef ident="type" mode="delete"/>
+          <attDef ident="quantity" mode="delete"/>
+          <attDef ident="extent" mode="delete"/>
+          <attDef ident="precision" mode="delete"/>
+          <attDef ident="scope" mode="delete"/>
+          <attDef ident="atLeast" mode="delete"/>
+          <attDef ident="atMost" mode="delete"/>
+          <attDef ident="min" mode="delete"/>
+          <attDef ident="max" mode="delete"/>
+          <attDef ident="confidence" mode="delete"/>
+        </attList>
+      </elementSpec>
       
-      
-      
-      -->
      
     </body>
   </text>
