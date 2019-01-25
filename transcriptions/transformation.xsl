@@ -170,6 +170,8 @@
                                 <xsl:text>#collapse</xsl:text>
                                 <xsl:value-of select="$fragID"/>
                             </xsl:attribute>
+                            <xsl:value-of select="position()"/>
+                            <xsl:text>. </xsl:text>
                             <xsl:apply-templates
                                 select="document(.)/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"
                             />
