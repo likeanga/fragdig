@@ -52,13 +52,16 @@
                                 <support>Parchment</support>
                                 <extent>
                                     <dimensions unit="mm">
-                                        <height></height>
                                         <width></width>
                                     </dimensions>
+                                    <dimensions unit="mm">
+                                        <width></width>
+                                    </dimensions>
+                                 
                                 </extent>
+                               
                             </supportDesc>
                         </objectDesc>
-                        <p>Pergamentfragment</p> 
                     </physDesc>
                     <history>
                         <origin>
