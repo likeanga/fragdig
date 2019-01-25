@@ -1855,7 +1855,7 @@
           <attDef ident="cert" mode="delete"/>
           <attDef ident="resp" mode="delete"/>
           <attDef ident="source" mode="delete"/>
-          <attDef ident="unit" mode="change" usage="req" select="mm in"/>
+          <attDef ident="unit" mode="change" usage="rec" select="mm in"/>
           <attDef ident="quantity" mode="delete"/>
           <attDef ident="extent" mode="delete"/>
           <attDef ident="precision" mode="delete"/>
