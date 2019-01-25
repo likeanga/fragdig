@@ -51,13 +51,14 @@
                             <supportDesc material="parch">
                                 <support>Parchment</support>
                                 <extent>
-                                    <dimensions unit="mm">
-                                        <width></width>
+                                    <dimensions unit="mm" facs="#img.fol.2r">
+                                        <width>186</width>
+                                        <height>62</height>
                                     </dimensions>
-                                    <dimensions unit="mm">
-                                        <width></width>
+                                    <dimensions unit="mm" facs="#img.fol.2v">
+                                        <width>186</width>
+                                        <height>62</height>
                                     </dimensions>
-                                 
                                 </extent>
                                
                             </supportDesc>
