@@ -243,7 +243,7 @@
                             </xsl:for-each>
                         </div>
                         <br/>
-                        <!--<div class="row">
+                        <div class="row">
                             <div class="col">
                                 <b>Übersetzung</b>
                             </div>
@@ -259,22 +259,26 @@
                             </div>
                         </xsl:if>
                         <div class="row">
-                            <!-\- TODO: Hier muss im XML noch die Adresse angegeben werden -\->
+                            <!-- TODO: Hier muss im XML noch die Adresse angegeben werden -->
                             <xsl:for-each
                                 select="document(.)/t:TEI/t:text/t:body/t:div[contains(@type, 'translation')]">
                                 <div class="col">
-                                    <xsl:for-each select="t:lg/t:l">
-                                        <a href="https://www.bibleserver.com">
+                                        <xsl:apply-templates select="t:milestone"/>
+                                        <xsl:apply-templates select="t:expan"/>
+                                        <xsl:apply-templates select="t:abbr"/>
+                                        <xsl:apply-templates select="t:lg/t:l"/>                                       
+                                        
+                                        <!--<a href="https://www.bibleserver.com">
                                             <img src="..\html\icons\deutsch.jpg"/>
                                         </a>
                                         <xsl:text>   </xsl:text>
                                         <a href="https://www.bibleserver.com">
                                             <img src="..\html\icons\englisch.jpg"/>
-                                        </a>
-                                    </xsl:for-each>
+                                        </a>-->
+                                    
                                 </div>
                             </xsl:for-each>
-                        </div>-->
+                        </div>
                         <!-- origindate und textlang. was ist mit Rest? -->
                         <br/>
                         <br/>
