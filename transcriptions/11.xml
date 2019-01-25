@@ -49,18 +49,16 @@
                     </msContents>
                     <physDesc>
                         <objectDesc>
-                            <supportDesc>
+                            <supportDesc material="parch">
                                 <support>Parchment</support>
                                 <extent>
-                                    <dimensions>
-                                        <!-- Sancti Gregorii Magni, homilia 38: 29,7 x 9,9 cm -->
-                                        <height></height>
-                                        <width></width>
+                                    <dimensions unit="cm">
+                                        <!-- <height>29,7</height>
+                                        <width>9,9</width> -->
                                     </dimensions>
                                 </extent>
                             </supportDesc>
                         </objectDesc>
-                        <!--  <p>Pergamentfragment</p> -->
                     </physDesc>
                     <history>
                         <origin>

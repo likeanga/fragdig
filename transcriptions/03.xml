@@ -48,18 +48,16 @@
                     </msContents>
                     <physDesc>
                         <objectDesc>
-                            <supportDesc>
+                            <supportDesc material="parch">
                                 <support>Parchment</support>
                                 <extent>
-                                    <dimensions>
-                                        <!-- Ps 56,8-9 / Ps 59,11-12: 19,5 x 6,2 cm -->
-                                        <height></height>
-                                        <width></width>
+                                    <dimensions unit="cm">
+                                        <!-- <height>195</height>
+                                        <width>62</width> -->
                                     </dimensions>
                                 </extent>
                             </supportDesc>
                         </objectDesc>
-                        <!--  <p>Pergamentfragment</p> -->
                     </physDesc>
                     <history>
                         <origin>

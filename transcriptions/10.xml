@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> -->
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -49,18 +49,16 @@
                     </msContents>
                     <physDesc>
                         <objectDesc>
-                            <supportDesc>
+                            <supportDesc material="parch">
                                 <support>Parchment</support>
                                 <extent>
-                                    <dimensions>
-                                        <!-- Heimo v Halberstadt, de varietate: 21,5 x  9,5 -->
-                                        <height></height>
-                                        <width></width>
+                                    <dimensions unit="cm">
+                                        <!-- <height>21,5</height>
+                                        <width>9,5</width> -->
                                     </dimensions>
                                 </extent>
                             </supportDesc>
                         </objectDesc>
-                        <!--  <p>Pergamentfragment</p> -->
                     </physDesc>
                     <history>
                         <origin>

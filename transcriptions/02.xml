@@ -51,9 +51,19 @@
                             <supportDesc material="parch">
                                 <support>Parchment</support>
                                 <extent>
+<<<<<<< HEAD
                                     <dimensions unit="mm" facs="#img.fol.2r">
                                         <width>186</width>
                                         <height>62</height>
+=======
+                                    <dimensions unit="mm">
+<<<<<<< HEAD
+                                        <!-- <height></height>
+                                        <width></width> -->
+=======
+                                        <width></width>
+>>>>>>> a1119324ce1b02dcad50b2cf08d9e7f14ef1be0a
+>>>>>>> c4de69985d1293d06040ca4397eea96b41157138
                                     </dimensions>
                                     <dimensions unit="mm" facs="#img.fol.2v">
                                         <width>186</width>
