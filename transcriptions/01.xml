@@ -72,47 +72,7 @@
     </facsimile>
     <text>
         <body>
-            <listBibl>
-                <msDesc>
-                    <!-- noch mehr Elemente -->
-                    <msIdentifier>
-                        <settlement>Graz</settlement>
-                        <repository>GAMS</repository>
-                        <msName xml:lang="la"/>
-                    </msIdentifier>
-                    <physDesc>
-                        <objectDesc>
-                            <supportDesc>
-                                <support>Parchment</support>
-                                <extent>
-                                    <dimensions>
-                                        <heigt></heigt>
-                                        <width></width>
-                                    </dimensions>
-                                </extent>
-                            </supportDesc>
-                        </objectDesc>
-                        <!--  <p>Pergamentfragment</p> -->
-                    </physDesc>
-                </msDesc>
-            </listBibl>
-            
-            <!--  
-                <physDesc>
-            <objectDesc form="codex">
-                <supportDesc material="perg"> ah: unbedingt rein
-                    <support>
-                        <p>Parchment.</p>
-                    </support>
-                    <extent>i + 55 leaves <dimensions scope="all" type="leaf"
-                        unit="inch">
-                        <height>7¼</height>
-                        <width>5⅜</width>
-                    </dimensions>
-                    </extent>
-                </supportDesc>
-            -->
-            
+                    
             <!-- recto -->
             <pb type="folio" facs="#img.fol.1r"/>
             <div type="original" xml:lang="la">
@@ -125,7 +85,7 @@
                             <abbr>ds</abbr>
                             <expan>Deus</expan>
                         </choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="#ER"
-                            place="above">52.6.</add></l>
+                            place="above"><milestone ana="52.6"/>.</add></l>
                     <l xml:id="L2">nibus placent: confusi sunt</l>
                     <l xml:id="L3">quoniam Deus sprevit eos.</l>
                     <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
