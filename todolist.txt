@@ -1,10 +1,11 @@
-﻿
+
 3) im xsl automatisch die url generieren
 4) Referenzfiles als liste machen
 5) erlauben in l "n" attribut
 6) Abbreviaturen und so Zeug - wie? Dachte mit Checkbox
 7) Auf dem Fragment ist weniger Text als im TEI. Wie auszeichnen?
 10) Logo einbauen
+im TEI Original mit Übersetzung verlinken
 
 Anm.: in Fragment 15 sind Rubrizierungen, die wären vielleicht interessant zu annotieren
 

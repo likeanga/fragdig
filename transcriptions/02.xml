@@ -17,7 +17,7 @@
                 </respStmt>
                 <respStmt>
                     <resp>XML encoding by</resp>
-                    <name>Angelika Hechtl</name>
+                    <name>Selina Galka und Angelika Hechtl</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -33,7 +33,6 @@
                 <idno type="PID">hier brauchen wir den PID</idno>
             </publicationStmt>
             <sourceDesc>
-   
                 <msDesc>
                     <msIdentifier>
                         <settlement/>
@@ -68,8 +67,7 @@
                             <origPlace/>
                         </origin>
                     </history>
-                </msDesc> 
-
+                </msDesc>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -101,8 +99,13 @@
             </div>
             <div type="translation" xml:lang="de">
                 <lg>
-                    <l corresp="#L1"/>
-                    <l corresp="#L2"/>
+                    <!-- Link Bibelserver: https://www.bibleserver.com/text/LUT/Psalm59 -->
+                    <l>Du, HERR, Gott Zebaoth, Gott Israels,wache auf und suche heim alle
+                        Völker!</l>
+                    <l>Sei keinem von ihnen gnädig, die so</l>
+                    <l>verwegene Übeltäter sind. Sela.</l>
+                    <l>Des Abends kommen sie wieder,</l>
+                    <l>heulen wie die Hunde und laufen in der Stadt umher.</l>
                 </lg>
             </div>
 
@@ -121,8 +124,13 @@
             </div>
             <div type="translation" xml:lang="de">
                 <lg>
-                    <l corresp="#L1"/>
-                    <l corresp="#L2"/>
+                    <l>Das Wort ihrer Lippen ist nichts als Sünde;</l>
+                    <l>darum sollen sie sich fangen in ihrer Hoffart mit all ihren Flüchen und
+                        Lügen.</l>
+                    <l>Vertilge sie ohne alle Gnade,</l>
+                    <l>vertilge sie, dass sie nicht mehr sind!</l>
+                    <l>Lass sie innewerden, dass Gott Herrscher ist in Jakob, bis an die Enden der
+                        Erde.</l>
                 </lg>
             </div>
         </body>
