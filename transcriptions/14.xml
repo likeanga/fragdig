@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -48,18 +48,16 @@
                     </msContents>
                     <physDesc>
                         <objectDesc>
-                            <supportDesc>
+                            <supportDesc material="parch">
                                 <support>Parchment</support>
                                 <extent>
-                                    <dimensions>
-                                        <!-- Ps 67,17 / Ps 67,2: 19,5 x 4,0 cm -->
-                                        <height></height>
-                                        <width></width>
+                                    <dimensions unit="cm">
+                                        <!-- <height>19,5</height>
+                                        <width>4,0</width> -->
                                     </dimensions>
                                 </extent>
                             </supportDesc>
                         </objectDesc>
-                        <!--  <p>Pergamentfragment</p> -->
                     </physDesc>
                     <history>
                         <origin>
