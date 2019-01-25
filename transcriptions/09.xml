@@ -75,7 +75,7 @@
     <facsimile>
         <!-- Faksimile einbinden -->
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///9r.jpg" xml:id="img.fol.9r"/>
+            <graphic mimeType="image/jpeg" url="file:///9.jpg" xml:id="img.fol.9r"/>
             <zone/>
         </surface>
     </facsimile>
