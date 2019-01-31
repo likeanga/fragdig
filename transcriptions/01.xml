@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
+<!-- einen Pid bei idno eingefügt, file:/// bei dem url auf das Bild weggelöscht und unter dem ersten div  <p><ref target="info:fedora/context:pm" type="context">PM Context</ref></p> eingefügt -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
