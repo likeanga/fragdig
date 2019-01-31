@@ -30,7 +30,7 @@
                             Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
                         Lizenz. </p>
                 </availability>
-                <idno type="PID">hier brauchen wir den PID</idno>
+                <idno type="PID">o:pm.ps-106</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -71,11 +71,11 @@
     <facsimile>
         <!-- Faksimile einbinden -->
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///4r.jpg" xml:id="img.fol.4r"/>
+            <graphic mimeType="image/jpeg" url="4r.jpg" xml:id="img.fol.4r"/>
             <zone/>
         </surface>
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///4v.jpg" xml:id="img.fol.4v"/>
+            <graphic mimeType="image/jpeg" url="4v.jpg" xml:id="img.fol.4v"/>
             <zone/>
         </surface>
     </facsimile>
@@ -98,6 +98,7 @@
             <!-- recto -->
             <pb type="folio" facs="#img.fol.4r"/>
             <div type="original" xml:lang="la">
+                <p><ref target="info:fedora/context:pm" type="context">PM Context</ref></p>
                 <lg>
                     <l><milestone ana="106,25"/>Dixit et stetit spiritus procellae et exaltati
                         sunt</l>
