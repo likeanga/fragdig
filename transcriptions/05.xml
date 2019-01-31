@@ -30,7 +30,7 @@
                             Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
                         Lizenz. </p>
                 </availability>
-                <idno type="PID">hier brauchen wir den PID</idno>
+                <idno type="PID">o:pm.ps-52</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -72,11 +72,11 @@
     <facsimile>
         <!-- Faksimile einbinden -->
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///5r.jpg" xml:id="img.fol.5r"/>
+            <graphic mimeType="image/jpeg" url="5r.jpg" xml:id="img.fol.5r"/>
             <zone/>
         </surface>
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///5v.jpg" xml:id="img.fol.5v"/>
+            <graphic mimeType="image/jpeg" url="5v.jpg" xml:id="img.fol.5v"/>
             <zone/>
         </surface>
     </facsimile>

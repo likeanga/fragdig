@@ -100,6 +100,7 @@
             <!-- recto -->
             <pb type="folio" facs="#img.fol.2r"/>
             <div type="original" xml:lang="la">
+                <p><ref target="info:fedora/context:pm" type="context">PM Context</ref></p>
                 <lg>
                     <!-- Problem: Text auf Fragmentbild beginnt erst bei intende -->
                     <l><milestone ana="58,6"/>[Et tu Domine Deus] virtutum, Deus Israel. Intende ad

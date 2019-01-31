@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -22,22 +21,50 @@
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Publication Information</p>
-                <p><idno type="PID">o:pm1.ps-52</idno></p>
+                <publisher>Zentrum für Informationsmodellierung, Universität Graz</publisher>
+                <pubPlace>Graz</pubPlace>
+                <date when="2018-12-13">2018</date>
+                <availability>
+                    <p>Dieses Werk ist lizenziert unter einer<ref
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative
+                        Commons Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+                        Lizenz. </p>
+                </availability>
+                <idno type="PID">o:pm.ps-52</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <institution>Karl-Franzens-University Graz</institution>
-                        <repository>Vestigia-Manuscript Research Center</repository>
+                        <settlement/>
+                        <repository/>
+                        <idno/>
                     </msIdentifier>
-                    <msFrag>
-                        <msIdentifier>
-                            <institution>Karl-Franzens-University Graz</institution>
-                            <repository>Vestigia-Manuscript Research Center</repository>
-                            <idno>01_PS52V6-7_PS53V7-9</idno>
-                        </msIdentifier>
-                    </msFrag>
+                    <msContents>
+                        <textLang xml:lang="la">Lateinisch</textLang>
+                        <msItem>
+                            <author/>
+                            <title/>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="parch">
+                                <support>Parchment</support>
+                                <extent>
+                                    <dimensions unit="cm">
+                                        <!-- <height>19,2</height>
+                                        <width>4,7</width> -->
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate notBefore="0800" notAfter="1600"/>
+                            <origPlace/>
+                        </origin>
+                    </history>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
