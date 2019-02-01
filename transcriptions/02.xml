@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/likeanga/fragdig/master/odd/out/fragdig.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -59,8 +59,7 @@
                                         <width>186</width>
                                         <height>62</height>
                                     </dimensions>
-                                </extent>
-                               
+                                </extent>    
                             </supportDesc>
                         </objectDesc>
                     </physDesc>
@@ -77,7 +76,6 @@
     <facsimile>
         <!-- Faksimile einbinden -->
         <surface>
-            <graphic mimeType="image/jpeg" url="file:///2r.jpg" xml:id="img.fol.2r"/>
             <zone/>
         </surface>
         <surface>
@@ -90,13 +88,14 @@
             <!-- recto -->
             <pb type="folio" facs="#img.fol.2r"/>
             <div type="original" xml:lang="la">
+                <p><ref target="info:fedora/context:pm1" type="context">PM Context</ref></p>
                 <lg>
                     <!-- Problem: Text auf Fragmentbild beginnt erst bei intende -->
-                    <l><milestone ana="58,6"/>[Et tu Domine Deus] virtutum, Deus Israel. Intende ad
+                    <l><milestone ana="58,6" unit="canto"/>[Et tu Domine Deus] virtutum, Deus Israel. Intende ad
                         visitandas omnes gentes,</l>
                     <l>non miserearis omnibus qui ope</l>
                     <l>rantur iniquitatem.</l>
-                    <l><milestone ana="58,7"/>Convertentur ad vesperam et fa</l>
+                    <l><milestone ana="58,7" unit="act"/>Convertentur ad vesperam et fa</l>
                     <l>men patientur ut canes et circu[ibunt civitatem]</l>
                 </lg>
             </div>
@@ -117,10 +116,10 @@
             <div type="original" xml:lang="la">
                 <lg>
                     <!-- erste Zeile nicht auf Bild! -->
-                    <l><milestone ana="58,13"/>Delictum oris eorum sermonem labiorum </l>
+                    <l><milestone ana="58,13" unit="act"/>Delictum oris eorum sermonem labiorum </l>
                     <l>ipsorum: et comprehendant in superbia sua.</l>
                     <l>Et de execratione et mendatio an</l>
-                    <l>nuntiabuntur <milestone ana="58,14"/>in consumatione,</l>
+                    <l>nuntiabuntur <milestone ana="58,14" unit="act"/>in consumatione,</l>
                     <l>in ira consumationis et non erunt.</l>
                     <l>Et scient quia Deus dominabitur [Iacob].</l>
                 </lg>
