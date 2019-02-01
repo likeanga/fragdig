@@ -74,6 +74,14 @@
         <body>
                     
             <!-- recto -->
+            <!-- 5 Deum non invocaverunt ; illic trepidaverunt timore, ubi non erat timor. Quoniam Deus dissipavit ossa eorum qui hominibus placent : confusi sunt, quoniam Deus sprevit eos. 
+                 6 Quis dabit ex Sion salutare Israël ? Cum converterit Deus captivitatem plebis suæ, exsultabit Jacob, et lætabitur Israël. 
+            
+            https://www.bibleserver.com/text/VUL/Psalmen53/5-6
+            
+            Problem: beginnt erst mit dem Zweiten Teil aus 52,5!
+            
+            -->
             <pb type="folio" facs="#img.fol.1r"/>
             <div type="original" xml:lang="la">
                 <lg>
@@ -87,12 +95,25 @@
                         </choice> dissipavit ossa <abbr>eoru</abbr> qui homi<add hand="#ER"
                             place="above"><milestone ana="52.6"/>.</add></l>
                     <l xml:id="L2">nibus placent: confusi sunt</l>
-                    <l xml:id="L3">quoniam Deus sprevit eos.</l>
+                    <l xml:id="L3"><choice>
+                        <abbr>qm</abbr>
+                        <expan>quoniam </expan>
+                    </choice><choice>
+                        <abbr>ds</abbr>
+                        <expan>Deus</expan>
+                    </choice> sprevit eos.</l>
                     <l xml:id="L4">Quis dabit ex Sion salutare Israhel</l>
-                    <l xml:id="L5">cum convertit Deus captivita[tem]</l>
+                    <l xml:id="L5">cum convertit <choice>
+                        <abbr>ds</abbr>
+                        <expan>Deus</expan>
+                    </choice> captivita[tem]</l>
                 </lg>
             </div>
             <div type="translation" xml:lang="de">
+                <!-- https://www.bibleserver.com/text/LUT/Psalm53
+                5 Wollen denn die Übeltäter sich nichts sagen lassen, die mein Volk fressen, dass sie sich nähren, Gott aber rufen sie nicht an? 
+                6 Da erschrecken sie sehr, wo kein Schrecken ist; doch Gott zerstreut die Gebeine derer, die dich bedrängen. Du machst sie zuschanden, denn Gott hat sie verworfen.
+                -->
                 <lg>
                     <l corresp="#L1"/>
                     <l corresp="#L2"/>
